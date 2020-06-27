@@ -1,38 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* Testing */
+.WOW {
+  background-color: sandybrown;
+}
+
+
+/* Fonts */
+.jostfont {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+}
+.montfont {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
+.darkfont {
+  color: #111;
+}
+.lightfont {
+  color: #eeeeee;
+}
+
+
+
+/* Themes */
+.dark {
+  background-color: #111;
+  transition: 300ms all ease;
+  color: #eeeeee;
+}
+.light {
+  background-color: #ffffff;
+  transition: 300ms all ease;
+  color: #111;
+}
+
+.full {
+  height: 100%;
+}
+
+
+/* Icons */
+
+/* Light */
+.icolight {
+  color: #eeeeee;
+  transition: 300ms ease;
+  margin-left: calc(40%);
+  margin-right: calc(40%);
+}
+  .icolight:hover {
+    cursor: pointer;
+    color: #bbbbbb;
+    transition: 300ms ease;
+  }
+  .icolight:active {
+    color: #eeeeee;
+  }
+
+/* Dark */
+.icodark {
+  color: #111;
+  transition: 300ms ease;
+  margin-left: calc(40%);
+  margin-right: calc(40%);
+}
+  .icodark:hover {
+    cursor: pointer;
+    color: #111;
+    transition: 300ms ease;
+  }
+  .icodark:active {
+    color: #111;
+  }
+
+/* Anime */
+.icorotate:hover {
+  transform: rotate(20deg);
+  transition: 300ms ease;
+}
+.icozoom:hover {
+  transform: scale(1.5);
+  transition: 300ms ease;
+}
+.icodown:hover {
+  transform: translateY(8px);
+  transition: 300ms ease;
+}
+
+/* CARDS */
+
+/* Light */
+.cardlight {
+  padding: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #ffffff;
+  color: #111;
+  border-radius: 8px;
+  box-shadow:  18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+  transition: 300ms all ease;
+}
+.cardlight:hover {
+  transform: scale(1.05);
+  transition: 300ms all ease;
+  box-shadow:  39px 39px 78px #d9d9d9, 
+             -39px -39px 78px #ffffff;
+}
+.smol{
+  margin-left: 20% !important;
+  margin-right: 20% !important;
+}
+
+/* Dark */
+.carddark {
+  padding: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow:  5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818;
+  transition: 300ms all ease;
+}
+.carddark:hover {
+  transform: scale(1.05);
+  transition: 300ms all ease;
+  box-shadow:  16px 16px 32px #0a0a0a, 
+             -16px -16px 32px #181818;
+}
+
+/* IMAGE */
+
+/* Light */
+.imglight {
+  max-width: 50%;
+  height: auto;
+  width: auto\10; /* ie8 */
+  box-shadow:  18px 18px 55px #d9d9d9, 
+              -18px -18px 55px #ffffff;
+  border-radius: 50%;
+}
+
+/* Dark */
+.imgdark {
+  max-width: 50%;
+  height: auto;
+  width: auto\10; /* ie8 */
+  border-radius: 50%;
+}
+
+/* On Large Screens */
+@media (min-width: 768px) { 
+  .imglight {
+    max-width: 15%;
+    height: auto;
+    width: auto\10; /* ie8 */
+    box-shadow:  18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+    border-radius: 50%;
+  }
+
+  .imgdark {
+    max-width: 15%;
+    height: auto;
+    width: auto\10; /* ie8 */
+    border-radius: 50%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.rounded {
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Buttons */
+.but {
+  color: #111;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #3cb1ff;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow:  5px 5px 10px #d4d4d4, 
+             -5px -5px 10px #ffffff;
+}
+.but:hover {
+  color: #111;
+  text-decoration: none;
+  transform: scale(1.5);
+  transition: 300ms all ease;
+  box-shadow:  7px 7px 10px #d4d4d4, 
+             -7px -7px 10px #ffffff;
+
+}
+.but:active {
+  text-decoration: none;
 }
