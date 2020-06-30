@@ -32,6 +32,14 @@ a {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
 }
+.textvis {
+  opacity: 100%;
+  transition: 300ms all ease;
+}
+.texthid {
+  opacity: 0%;
+  transition: 300ms all ease;
+}
 
 .darkfont {
   color: #111;
@@ -63,8 +71,8 @@ a {
 
 .taglight {
   border-radius: 10px;
-  background-color: #df4742;
-  color: #eeeeee;
+  background-color: #fa605b;
+  color: #ffffff;
 }
 .tagdark {
   border-radius: 10px;
@@ -109,6 +117,7 @@ a {
 /* Arrows */
 .arrowlight {
   cursor: pointer;
+  color: #111111;
   transition: 300ms ease;
 }
 .arrowlight:hover {
@@ -119,6 +128,7 @@ a {
 
 .arrowdark {
   cursor: pointer;
+  color: #eeeeee;
   transition: 300ms ease;
 }
 .arrowdark:hover {
