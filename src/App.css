@@ -6,6 +6,15 @@
 a {
   text-decoration: none;
 }
+.nonedec {
+  color: inherit;
+}
+.nonedec:hover {
+  color: inherit;
+}
+.nonedec:active {
+  color: inherit;
+}
 
 
 /* Testing */
@@ -61,7 +70,6 @@ a {
 }
   .icolight:hover {
     cursor: pointer;
-    color: #bbbbbb;
     transition: 300ms ease;
   }
   .icolight:active {
@@ -95,6 +103,11 @@ a {
 }
 .icodown:hover {
   transform: translateY(8px);
+  transition: 300ms ease;
+}
+.icoopac:hover {
+  opacity: 50%;
+  color: #808080;
   transition: 300ms ease;
 }
 
@@ -188,7 +201,9 @@ a {
 
 
 /* Buttons */
-.but {
+
+/* Light */
+.butlight {
   color: #111;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -200,15 +215,43 @@ a {
   box-shadow:  5px 5px 10px #d4d4d4, 
              -5px -5px 10px #ffffff;
 }
-.but:hover {
-  color: #111;
+.butlight:hover {
   text-decoration: none;
-  transform: scale(1.5);
-  transition: 300ms all ease;
-  box-shadow:  7px 7px 10px #d4d4d4, 
-             -7px -7px 10px #ffffff;
-
 }
-.but:active {
+.butlight:active {
   text-decoration: none;
+}
+
+
+/* Dark */
+.butdark {
+  color: #111;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #3cb1ff;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow:  5px 5px 10px #0a0a0a, 
+             -5px -5px 10px #181818;
+}
+.butdark:hover {
+  text-decoration: none;
+  color: #111;
+}
+.butdark:active {
+  text-decoration: none;
+  color: #111;
+}
+
+
+/* Images */
+
+/* SabsBg */
+
+.sabsbg {
+  height: 100vh;
+  width: auto;
+  opacity: 15%;
 }

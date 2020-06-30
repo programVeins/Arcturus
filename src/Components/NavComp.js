@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default class NavComp extends Component {
 
@@ -7,6 +8,9 @@ export default class NavComp extends Component {
     
         this.state = {
              iconCol: "icolight",
+             redirectAbout : false,
+             redirectProjcts : false,
+             redirectHome: false
         }
         this.handleTheme = this.handleTheme.bind(this);
     }
@@ -31,22 +35,35 @@ export default class NavComp extends Component {
                                 </svg> 
                             }
                         </div>
-                    </div>    
+                    </div>  
                     <div className="col">
-                        <div className={this.state.iconCol + " icozoom"} onClick={this.handleIcon}>
-                            <svg class="bi bi-person-fill" width="2.3em" height="2.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                            </svg>
+                        <div className={this.state.iconCol + " icoopac"} onClick={this.handleHome}>
+                            <NavLink className="nonedec" to="/home">
+                                <svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-hexagon-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                                </svg>
+                            </NavLink>
+                        </div>
+                    </div>  
+                    <div className="col">
+                        <div className={this.state.iconCol + " icozoom"} onClick={this.handleAbout}>
+                            <NavLink className="nonedec" to="/about">
+                                <svg class="bi bi-person-fill" width="2.4em" height="2.4em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="col">
-                        <div className={this.state.iconCol + " icodown"} onClick={this.handleIcon}>
-                            <svg class="bi bi-folder-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
-                            </svg>
+                        <div className={this.state.iconCol + " icodown"} onClick={this.handleProjects}>
+                            <NavLink className="nonedec" to="/projects">
+                                <svg class="bi bi-folder-fill" width="2.2em" height="2.2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+                                </svg>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
-        )
+        );
     }
 }

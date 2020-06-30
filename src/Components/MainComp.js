@@ -31,7 +31,8 @@ export default class MainComp extends Component {
 
                     <Route exact path="/about" render={(props) =>
                         <AboutComp {...props}
-                         toggleDarkMode={this.toggleDarkMode}/>}/>
+                         toggleDarkMode={this.toggleDarkMode}
+                         darkMode={this.state.darkMode}/>}/>
 
                     <Redirect to="/home"/>
                 </Switch>

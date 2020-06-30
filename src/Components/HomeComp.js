@@ -12,11 +12,18 @@ export default class HomeComp extends Component {
              iconCol: "icolight",
         }
         this.handleTheme = this.handleTheme.bind(this);
+        this.getAge = this.getAge.bind(this);
     }
     
     handleTheme() {
         this.setState({iconCol: (this.state.iconCol === "icolight") ? "icodark" : "icolight" });
         this.props.toggleDarkMode();
+    }
+
+    getAge(d1, d2){
+        d2 = d2 || new Date();
+        var diff = d2.getTime() - d1.getTime();
+        return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
     }
 
 
@@ -48,13 +55,13 @@ export default class HomeComp extends Component {
                         <div className="col">
                             <div className={this.props.darkMode ? "carddark" : "cardlight"}>
                                 <h5 className={"montfont text-justify " + (this.props.darkMode ? "lightfont" : "darkfont") }>
-                                    Hello! I am Sabesh. I'm 19 and come from Chennai, India.
+                                    {`Hello! I am Sabesh. I'm ${this.getAge(new Date(2001, 5, 5))} and come from Chennai, India.
                                     I am an adept Web Developer and find myself crawling towards
                                     the beauties and aesthetics of the web. I also work extensively
                                     with iOS using swift. I feel like it's every consumer's necessity
                                     to experience quality products, with a robust feature-set whilst
                                     enjoying a hassle-free User experience. I strive to make that possible
-                                    in every product I develop/design.
+                                    in every product I develop/design.`}
                                 </h5>
                             </div>
                         </div>
@@ -77,13 +84,13 @@ export default class HomeComp extends Component {
                                             height="50px" width="50px" className="rounded"/>
                                             <br/>
                                             <br/>
-                                            <h5 className="jostfont darkfont">{project.name}</h5>
+                                            <h5 className={"jostfont " + (this.props.darkMode ? "lightfont" : "darkfont")}>{project.name}</h5>
                                             <br/>
                                             <br/>
-                                            <p className={"px-4 montfont text-justify " + (this.props.darkMode ? "lightfont" : "darkfont") }>{project.description}</p>
+                                            <p className={"px-4 montfont text-justify " + (this.props.darkMode ? "lightfont" : "darkfont")}>{project.description}</p>
                                             <br/>
                                             <br/>
-                                            <a className="but jostfont" href={project.link}>Go</a>
+                                            <a className={"jostfont " + (this.props.darkMode ? "butdark" : "butlight")} href={project.link}>Go</a>
                                             <br/>
                                             <br/>
                                             <br/>
