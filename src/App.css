@@ -59,6 +59,20 @@ a {
 }
 
 
+/* Colors */
+
+.taglight {
+  border-radius: 10px;
+  background-color: #df4742;
+  color: #eeeeee;
+}
+.tagdark {
+  border-radius: 10px;
+  background-color: #42dadf;
+  color: #111111;
+}
+
+
 /* Icons */
 
 /* Light */
@@ -91,6 +105,27 @@ a {
   .icodark:active {
     color: #111;
   }
+
+/* Arrows */
+.arrowlight {
+  cursor: pointer;
+  transition: 300ms ease;
+}
+.arrowlight:hover {
+  cursor: pointer;
+  color: #df4742;
+  transition: 300ms ease;
+}
+
+.arrowdark {
+  cursor: pointer;
+  transition: 300ms ease;
+}
+.arrowdark:hover {
+  cursor: pointer;
+  color: #42dadf;
+  transition: 300ms ease;
+}
 
 /* Anime */
 .icorotate:hover {
@@ -246,12 +281,34 @@ a {
 }
 
 
-/* Images */
 
-/* SabsBg */
-
-.sabsbg {
-  height: 100vh;
-  width: auto;
-  opacity: 15%;
+.text-1 {
+  font-size: calc(100% + 2.5vh + 2.5vw);
+}
+.text-2 {
+  font-size: calc(100% + 2vh + 2vw);
+}
+.text-3 {
+  font-size: calc(100% + 1.5vh + 1.5vw);
+}
+.text-4 {
+  font-size: calc(100% + 1vh + 1vw);
+}
+.text-5 {
+  font-size: calc(100% + 0.8vh + 0.8vw);
+}
+.text-6 {
+  font-size: calc(100% + 0.6vh + 0.6vw);
+}
+.text-7 {
+  font-size: calc(100% + 0.3vh + 0.3vw);
+}
+.text-8 {
+  font-size: calc(100% + 0.2vh + 0.2vw);
+}
+.text-9 {
+  font-size: calc(100% + 0.1vh + 0.1vw);
+}
+.text-10 {
+  font-size: calc(70% + 0.1vh + 0.1vw);
 }

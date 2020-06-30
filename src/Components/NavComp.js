@@ -7,7 +7,7 @@ export default class NavComp extends Component {
         super(props)
     
         this.state = {
-             iconCol: "icolight",
+             iconCol: this.props.darkMode ? "icolight" : "icodark",
              redirectAbout : false,
              redirectProjcts : false,
              redirectHome: false
@@ -16,7 +16,7 @@ export default class NavComp extends Component {
     }
     
     handleTheme() {
-        this.setState({iconCol: (this.state.iconCol === "icolight") ? "icodark" : "icolight" });
+        this.setState({iconCol: this.props.darkMode ? "icodark" : "icolight"});
         this.props.toggleDarkMode();
     }
 
