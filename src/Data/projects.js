@@ -33,8 +33,8 @@ const projects = [
         id: 3,
         name: "CovidCam",
         description: "A hackathon winning prototype to trace the community spread of the virus Covid-19",
-        extdes: "",
-        link: "",
+        extdes: "CovidCam is a hackathon winning prototype to trace community spread of the Covid-19 virus. It uses CoreLocation to trace user location and marks it with a timestamp at regular intervals of time, when it senses that the user is moving. This way, we can easily and effectively trace community spread.",
+        link: "https://ieeecovidmove.in/ieee-covidmove-online-hackathon-challenge-results/",
         img: "./assets/images/thumbs/covidcam.PNG",
         featured: false,
         techStack: "XCode,Swift 5,CoreLocation,MapKit"
@@ -43,8 +43,8 @@ const projects = [
         id: 4,
         name: "Pottermoney",
         description: "Currency convertor for Harry Potter currency, made with vanilla JS",
-        extdes: "",
-        link: "",
+        extdes: "It is one of my first projects made with vanilla HTML,CSS and JS. Inspired by Harry Potter, it's a currency convertor between Galleons, Sickles and Knuts, the currencies of the Potterverse.",
+        link: "https://github.com/programVeins/pottermoney",
         img: "./assets/images/thumbs/gold.PNG",
         featured: false,
         techStack: "HTML,CSS,JS"

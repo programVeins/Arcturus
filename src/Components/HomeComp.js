@@ -67,12 +67,12 @@ export default class HomeComp extends Component {
                             <h4 className="jostfont">Top Projects</h4>
                         </div>
                     </div>
-                    <br/><br/><br/><br/>
+                    <br/><br/>
                     <div className="row justify-content-center">
                         {projects.map((project,index) => {
                             if (project.featured === true) {
                                 return(
-                                    <div className="col-lg-3 mx-3">
+                                    <div className="col-lg-3 my-5 mx-3">
                                         <div className={this.props.darkMode ? "carddark" : "cardlight"}>
                                             <br/>
                                             <img src={project.img} alt={project.name}
@@ -85,7 +85,7 @@ export default class HomeComp extends Component {
                                             <p className={"px-4 montfont text-justify " + (this.props.darkMode ? "lightfont" : "darkfont")}>{project.description}</p>
                                             <br/>
                                             <br/>
-                                            <a className={"jostfont " + (this.props.darkMode ? "butdark" : "butlight")} href={project.link}>Go</a>
+                                            <a className={"jostfont " + (this.props.darkMode ? "butdark" : "butlight")} href={project.link} target="_blank" rel="noopener noreferrer">Go</a>
                                             <br/>
                                             <br/>
                                             <br/>

@@ -83,8 +83,14 @@ a {
   border-radius: 10px;
   color: #eeeeee;
   background: linear-gradient(145deg, #121212, #0f0f0f);
-  box-shadow:  7px 7px 15px #0b0b0b, 
-             -7px -7px 15px #171717;
+  box-shadow:  5px 5px 10px #0b0b0b, 
+             -5px -5px 10px #171717;
+}
+.tagwhite {
+  border-radius: 10px;
+  color: #111111;
+  box-shadow:  5px 5px 10px #969696, 
+             -5px -5px 10px #ffffff;
 }
 
 
