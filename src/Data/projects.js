@@ -22,7 +22,7 @@ const projects = [
     {
         id: 2,
         name: "Junker",
-        description: "",
+        description: "An iOS (iMessage) tool made to filter out spam SMS's without invading privacy. Made with swift",
         extdes: "Junker is the result of days of annoyance, using my messages app on my iPhone. I received about 10 spam SMS's a day, and didn't want to install a filter software owing to privacy reasons. So made mine own. It has no database, it filters SMS's out if they have an '-' in the sender number (90% Indian spam SMS's are have a format of XY-00000) and if it finds words like 'oil spa' or 'discount'. It also carefully marks messages containing 'otp' or 'bank' as non-spam.",
         link: "https://github.com/programVeins/junker",
         img: "./assets/images/thumbs/junker.PNG",

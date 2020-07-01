@@ -51,7 +51,7 @@ export default class AboutComp extends Component {
                                     </div>
                                     <div className="col text-left">
                                         <h4 className="jostfont">{proj.name}</h4>
-                                        <p className="montfont">{proj.extdes}</p>
+                                        <p className="montfont text-justify">{proj.extdes}</p>
                                         {tags.map((tag, indexx) => {
                                             return(
                                             <span className={"px-2 py-1 mr-3 montfont text-10 " + (this.props.darkMode ? "tagdark" : "taglight")}>{tag}</span>
