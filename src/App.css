@@ -79,6 +79,13 @@ a {
   background-color: #42dadf;
   color: #111111;
 }
+.tagblack {
+  border-radius: 10px;
+  color: #eeeeee;
+  background: linear-gradient(145deg, #121212, #0f0f0f);
+  box-shadow:  7px 7px 15px #0b0b0b, 
+             -7px -7px 15px #171717;
+}
 
 
 /* Icons */
@@ -160,9 +167,6 @@ a {
 
 /* Light */
 .cardlight {
-  padding: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
   background-color: #ffffff;
   color: #111;
   border-radius: 8px;
@@ -183,9 +187,6 @@ a {
 
 /* Dark */
 .carddark {
-  padding: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
   background-color: #111111;
   color: #ffffff;
   border-radius: 8px;
@@ -293,7 +294,7 @@ a {
 }
 
 
-
+/* Text Sizes */
 .text-1 {
   font-size: calc(100% + 2.5vh + 2.5vw);
 }
@@ -319,7 +320,7 @@ a {
   font-size: calc(100% + 0.2vh + 0.2vw);
 }
 .text-9 {
-  font-size: calc(100% + 0.1vh + 0.1vw);
+  font-size: calc(90% + 0.1vh + 0.1vw);
 }
 .text-10 {
   font-size: calc(70% + 0.1vh + 0.1vw);

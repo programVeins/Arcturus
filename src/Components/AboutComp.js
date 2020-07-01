@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import NavComp from './NavComp'
 import projects from '../Data/projects'
+import me from '../Data/me'
 
 export default class AboutComp extends Component {
 
     render() {
+        var skills = me.skillset.split(',')
         return (
             <div className="container-fluid">
                 <br/><br/><br/><br/><br/><br/>
@@ -26,13 +28,28 @@ export default class AboutComp extends Component {
                        </div>
                     </div>
                     <br/>
-                    <div className={"row " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                       <div className="col">
-                          <div className="montfont"> Greetings. I am Sabesh. I am a web developer, iOS developer and a UI/UX designer</div>
+                    <div className={"row my-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
+                       <div className="col p-5">
+                            <div className="montfont text-8 text-justify">{me.aboutdes}</div>
                        </div>
                     </div>
                     <br/><br/>
-
+                    <div className="row">
+                       <div className="col">
+                       <h3 className="jostfont text-left">Skillset</h3>
+                       </div>
+                    </div>
+                    <br/>
+                    <div className="row">
+                        {skills.map((skill,index) => {
+                            return (
+                                <div className="col-1.5 mx-4 my-4">
+                                    <span className={"px-2 py-1 montfont text-9 " + (this.props.darkMode ? "tagblack" : "taglight")}>{skill}</span>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <br/><br/>
 
                     <div className="row">
                        <div className="col">
@@ -45,11 +62,11 @@ export default class AboutComp extends Component {
                         return(
                             <React.Fragment>
                                 <div className={"row justify-content-center align-items-center my-2 py-5 " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                                    <div className="col-1 mr-5">
+                                    <div className="col-1 mx-4">
                                         <img src={proj.img} alt={proj.name}
                                         height="70" width="70"/>
                                     </div>
-                                    <div className="col text-left">
+                                    <div className="col text-left mr-3">
                                         <h4 className="jostfont">{proj.name}</h4>
                                         <p className="montfont text-justify">{proj.extdes}</p>
                                         {tags.map((tag, indexx) => {
