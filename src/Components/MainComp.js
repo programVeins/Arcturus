@@ -34,7 +34,7 @@ export default class MainComp extends Component {
 
     render() {
         return (
-            <div className={(this.state.darkMode ? "dark" : "light") + " full"}>
+            <div className={(this.state.darkMode ? "dark" : "light") + " full container-fluid"}>
                 <br/><br/><br/><br/><br/><br/>
                 <NavComp toggleDarkMode={this.toggleDarkMode} darkMode={this.state.darkMode}/>
                 <br/><br/><br/>

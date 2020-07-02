@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import * as contentful from 'contentful'
+import * as Markdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 
@@ -72,7 +73,7 @@ export default class PostComp extends Component {
                         <img alt={picc.title} src={picc.file.url}
                         width="100%" height="auto" className="blogimg"/>
                         <h3 className="jostfont mt-5">{current.title}</h3>
-                        <p className="montfont text-justify text-8 p-5">{current.content}</p>
+                        <p className="montfont text-justify text-8 p-5"><Markdown source={current.content} escapeHtml={false}/></p>
                         <br/>
                         <p className="montfont p-5 text-9 text-left">
                             <Moment format="DD/MM/YYYY - HH:mm">{current.date}</Moment>

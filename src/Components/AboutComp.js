@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import NavComp from './NavComp'
 import projects from '../Data/projects'
 import me from '../Data/me'
 
