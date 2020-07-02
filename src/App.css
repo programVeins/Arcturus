@@ -8,12 +8,15 @@ a {
 }
 .nonedec {
   color: inherit;
+  text-decoration: none;
 }
 .nonedec:hover {
   color: inherit;
+  text-decoration: none;
 }
 .nonedec:active {
   color: inherit;
+  text-decoration: none;
 }
 
 
@@ -207,6 +210,11 @@ a {
              -16px -16px 32px #181818;
 }
 
+/* Blog */
+.blogcard{
+  cursor: pointer;
+}
+
 /* IMAGE */
 
 /* Light */
@@ -244,6 +252,11 @@ a {
     width: auto\10; /* ie8 */
     border-radius: 50%;
   }
+}
+
+/* Blog Image */
+.blogimg {
+  border-radius: 8px 8px 0px 0px; 
 }
 
 
@@ -330,4 +343,16 @@ a {
 }
 .text-10 {
   font-size: calc(70% + 0.1vh + 0.1vw);
+}
+
+/* Fixed */
+.fixedlight:hover {
+  transform: none !important;
+  box-shadow:  18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff !important;
+}
+.fixeddark:hover {
+  transform: none !important;
+  box-shadow:  5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818 !important;
 }

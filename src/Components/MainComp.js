@@ -4,6 +4,7 @@ import HomeComp from './HomeComp';
 import AboutComp from './AboutComp';
 import NavComp from './NavComp';
 import BlogComp from './BlogComp';
+import PostComp from './PostComp';
 
 
 export default class MainComp extends Component {
@@ -12,11 +13,21 @@ export default class MainComp extends Component {
         super(props)
     
         this.state = {
-             darkMode: true
+            selectedPost: 0,
+            darkMode: true
         }
         this.toggleDarkMode = this.toggleDarkMode.bind(this);
+        this.changePost = this.changePost.bind(this);
     }
-    
+
+    changePost(p) {
+        this.setState({selectedPost: p});
+    }
+    componentDidUpdate() {
+        console.log(this.state.selectedPost)
+    }
+
+
     toggleDarkMode() {
         this.setState({darkMode: !this.state.darkMode});
     }
@@ -39,6 +50,12 @@ export default class MainComp extends Component {
 
                     <Route exact path="/blog" render={(props) =>
                         <BlogComp {...props}
+                         darkMode={this.state.darkMode}
+                         changePost={this.changePost}/>}/>
+
+                    <Route path="/blog/" render={(props) =>
+                        <PostComp {...props}
+                         post={this.state.selectedPost}
                          darkMode={this.state.darkMode}/>}/>
 
                     <Redirect to="/home"/>

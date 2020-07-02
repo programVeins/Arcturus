@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import * as contentful from 'contentful'
+import { Link } from 'react-router-dom';
+import Moment from 'react-moment';
 
 
 export default class BlogComp extends Component {
@@ -20,14 +22,13 @@ export default class BlogComp extends Component {
     fetchPosts = () => this.client.getEntries()
 
     setPosts = response => {
-        console.log(response.items)
         this.setState({
           posts: response.items
         })
     }
 
     render() {
-        console.log(this.state.posts[0])
+        console.log(this.state.posts)
         return (
             <div className="container">
                 <div className="row">
@@ -36,19 +37,26 @@ export default class BlogComp extends Component {
                     </div>
                 </div>
                 <br/><br/><br/>
-                <div className="row">
+                <div className="row justify-content-center">
                     { this.state.posts.map(({fields}, i) =>
                         {
-                            console.log(fields)
                             return (
-                                <div className="col-3">
-                                    {fields.title}
-                                </div>
+                                    <div className={"col-lg-3 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
+                                        onClick={() => this.props.changePost(i)}>
+                                        <Link to={`/blog/${fields.path}`} className="nonedec">
+                                            <img className="blogimg mb-5 " alt={fields.title} src={fields.pic.fields.file.url} height="auto" width="100%"/>
+                                            <h5 className="jostfont">{fields.title}</h5>
+                                            <p className="montfont text-justify p-4">{fields.content.substr(0,200)} ...</p>
+                                            <p className="montfont text-left pl-4"><Moment format="YYYY/MM/DD">{fields.date}</Moment></p>
+                                        </Link>
+                                    </div>
                             );
                         }
                     )}
                 </div>
+                <br/><br/><br/>
             </div>
         )
     }
+
 }
