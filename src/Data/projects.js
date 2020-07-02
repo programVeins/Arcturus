@@ -35,7 +35,7 @@ const projects = [
         description: "A hackathon winning prototype to trace the community spread of the virus Covid-19",
         extdes: "CovidCam is a hackathon winning prototype to trace community spread of the Covid-19 virus. It uses CoreLocation to trace user location and marks it with a timestamp at regular intervals of time, when it senses that the user is moving. This way, we can easily and effectively trace community spread.",
         link: "https://ieeecovidmove.in/ieee-covidmove-online-hackathon-challenge-results/",
-        img: "./assets/images/thumbs/covidcam.PNG",
+        img: "./assets/images/thumbs/covidcam.png",
         featured: false,
         techStack: "XCode,Swift 5,CoreLocation,MapKit"
     },
