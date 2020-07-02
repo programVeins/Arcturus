@@ -5,7 +5,7 @@ const projects = [
         description: "A submission for WWDC20 Swift Student Challenge. Made with Xcode playgrounds using Swift",
         extdes: "A WWDC20 Submission devloped with ❤️ by Sabesh Bharathi. The playground focuses on the COVID-19 Global pandemic that we face right now. While it might sound redundant at this point, people still are not following basic guidelines to counter the disease. This small playground is intended to educate these people on the basic Do's and Don'ts during these troubled times and warns them of the repercussions of careless actions.",
         link: "https://github.com/programVeins/Pandemic",
-        img: "./assets/images/thumbs/pandemic.PNG",
+        img: "./assets/images/thumbs/pandemic.png",
         featured: true,
         techStack: "XCode Playground,Swift 5,UIKit,AVFoundation"
     },
@@ -15,7 +15,7 @@ const projects = [
         description: "A website made for the startup Oneshot Affiliate. Sign up to learn and earn with affiliate marketing",
         extdes: "A React-Flask app made for the startup, Oneshot Affiliate. It provides quality online courses, along with affiliate marketing so you can earn while you learn. For every referal, you recieve an incentive. Deployed on heroku, it's my first live debut website. Check it out!",
         link: "https://www.oneshotaffiliate.com/home",
-        img: "./assets/images/thumbs/oneshot.PNG",
+        img: "./assets/images/thumbs/oneshot.png",
         featured: true,
         techStack: "Full Stack,ReactJS,Python-Flask,SQLAlchemy,PostgreSQL"
     },
@@ -25,7 +25,7 @@ const projects = [
         description: "An iOS (iMessage) tool made to filter out spam SMS's without invading privacy. Made with swift",
         extdes: "Junker is the result of days of annoyance, using my messages app on my iPhone. I received about 10 spam SMS's a day, and didn't want to install a filter software owing to privacy reasons. So I made mine own. It has no database, it filters SMS's out if they have an '-' in the sender number (90% Indian spam SMS's are have a format of XY-00000) and if it finds words like 'oil spa' or 'discount'. It also carefully marks messages containing 'otp' or 'bank' as non-spam.",
         link: "https://github.com/programVeins/junker",
-        img: "./assets/images/thumbs/junker.PNG",
+        img: "./assets/images/thumbs/junker.png",
         featured: true,
         techStack: "XCode,Swift 5,iMessage Target"
     },
@@ -45,7 +45,7 @@ const projects = [
         description: "Currency convertor for Harry Potter currency, made with vanilla JS",
         extdes: "It is one of my first projects made with vanilla HTML, CSS and JS. Inspired by Harry Potter, it's a currency convertor between Galleons, Sickles and Knuts, the currencies of the Potterverse.",
         link: "https://github.com/programVeins/pottermoney",
-        img: "./assets/images/thumbs/gold.PNG",
+        img: "./assets/images/thumbs/gold.png",
         featured: false,
         techStack: "HTML,CSS,JS"
     },
