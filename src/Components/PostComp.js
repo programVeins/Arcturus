@@ -8,12 +8,13 @@ export default class PostComp extends Component {
 
     state = {
         posts: [],
+        url: "",
         thisPost: {
             sys : {},
             fields: {
-                title: "",
+                title: "404 Article not found",
                 path: "",
-                content: "",
+                content: "<p style=\"text-align: center;\">Yikes! I was unable to find the post you are looking for. Please go back 😔</p>",
                 date: "",
                 banner : {
                     sys: {},
@@ -36,6 +37,7 @@ export default class PostComp extends Component {
 
     componentDidMount() {
         this.fetchPosts().then(this.setPosts);
+        this.setState({url: window.location.href.split('blog/')[1]});
     }
 
     fetchPosts = () => this.client.getEntries()
@@ -44,13 +46,18 @@ export default class PostComp extends Component {
         this.setState({
           posts: response.items
         });
-        this.setState({
-            thisPost: this.state.posts[this.props.post]
-          })
+        this.state.posts.forEach((item, index) => {
+            if (item.fields.path === this.state.url) {
+                this.setState({
+                    thisPost: this.state.posts[index]
+                  })
+            }
+        } )
+        
     }
 
     render() {
-        console.log(this.state.thisPost)
+        console.log(this.state.url)
         var current = this.state.thisPost.fields;
         var picc = this.state.thisPost.fields.banner.fields;
         return (
@@ -76,7 +83,10 @@ export default class PostComp extends Component {
                         <p className="montfont text-justify text-8 p-5"><Markdown source={current.content} escapeHtml={false}/></p>
                         <br/>
                         <p className="montfont p-5 text-9 text-left">
-                            <Moment format="DD/MM/YYYY - HH:mm">{current.date}</Moment>
+                            {current.date !== "" ?
+                                <Moment format="DD/MM/YYYY - HH:mm">{current.date}</Moment> : 
+                                <></>
+                            }
                         </p>
                     </div>
                 </div>
