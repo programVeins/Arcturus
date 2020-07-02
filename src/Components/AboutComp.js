@@ -9,9 +9,6 @@ export default class AboutComp extends Component {
         var skills = me.skillset.split(',');
         return (
             <div className="container-fluid">
-                <br/><br/><br/><br/><br/><br/>
-                <NavComp toggleDarkMode={this.props.toggleDarkMode} darkMode={this.props.darkMode}/>
-                <br/><br/><br/>
                 <div className="container">
                     
                     <div className="row">

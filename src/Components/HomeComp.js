@@ -31,9 +31,6 @@ export default class HomeComp extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <br/><br/><br/><br/><br/><br/>
-                <NavComp toggleDarkMode={this.props.toggleDarkMode} darkMode={this.props.darkMode}/>
-                <br/><br/><br/>
                 <div className="row">
                     <div className="col">
                         <img className={this.props.darkMode ? "imgdark" : "imglight"} alt="mainpic" src={me.mainimg}/>
