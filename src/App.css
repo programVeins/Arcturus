@@ -172,7 +172,6 @@ a {
 }
 .icoopac:hover {
   opacity: 50%;
-  color: #808080;
   transition: 300ms ease;
 }
 
@@ -262,10 +261,21 @@ a {
 .blogimg {
   border-radius: 8px 8px 0px 0px; 
 }
-
-
 .rounded {
   border-radius: 50%;
+}
+
+/* About Image */
+.aboutimglight {
+  border-radius: 8px;
+  box-shadow:  -7px -7px 43px #d1d1d1, 
+             7px 7px 43px #ffffff;
+}
+.aboutimgdark {
+  border-radius: 8px;
+}
+.nopadding {
+  padding: 0;
 }
 
 

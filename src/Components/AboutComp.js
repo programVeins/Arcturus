@@ -34,9 +34,17 @@ export default class AboutComp extends Component {
                             </Fade>
                             <br/>
                             <Fade in>
-                                <div className={"row my-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                                   <div className="col p-3">
+                                <div className={"row align-items-center my-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
+                                    <div className="col-md-3 p-5 d-block d-md-none">
+                                        <img src={me.aboutimg} alt={me.name} align="right"
+                                        width="100%" height="auto" className={this.props.darkMode ? "aboutimgdark" : "aboutimglight"}/>
+                                   </div>
+                                   <div className="col p-4">
                                         <div className="montfont text-8 text-justify">{me.aboutdes}</div>
+                                   </div>
+                                   <div className="col-md-3 nopadding d-none d-md-block">
+                                        <img src={me.aboutimg} alt={me.name} align="right"
+                                        width="100%" height="auto" className={this.props.darkMode ? "aboutimgdark" : "aboutimglight"}/>
                                    </div>
                                 </div>
                             </Fade>
