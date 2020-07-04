@@ -36,10 +36,6 @@ const me = {
             link: "https://twitter.com/sabeshbharathi"
         },
         {
-            ico:  "./assets/images/social/linkedin.png",
-            link: "https://www.linkedin.com/in/sabesh-bharathi-40774524/"
-        },
-        {
             ico:  "./assets/images/social/medium.png",
             link: "https://medium.com/@sabstanceabuse"
         },

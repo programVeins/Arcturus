@@ -79,7 +79,7 @@ export default class PostComp extends Component {
                     <div className={"col my-5 p-0 " + (this.props.darkMode ? "carddark fixeddark" : "cardlight fixedlight")}>
                         <img alt={picc.title} src={picc.file.url}
                         width="100%" height="auto" className="blogimg"/>
-                        <h3 className="jostfont mt-5">{current.title}</h3>
+                        <h3 className="jostfont px-3 mt-5">{current.title}</h3>
                         <p className="montfont text-justify text-8 p-5"><Markdown source={current.content} escapeHtml={false}/></p>
                         <br/>
                         <p className="montfont p-5 text-9 text-left">

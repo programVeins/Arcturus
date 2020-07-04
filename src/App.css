@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+/* * {
+  border: 1px solid rgb(30, 64, 255) !important;
+} */
+
 a {
   text-decoration: none;
 }
@@ -356,3 +360,15 @@ a {
   box-shadow:  5px 5px 13px #0a0a0a, 
              -5px -5px 13px #181818 !important;
 }
+
+/* React Animations */
+.fade-appear {
+  opacity : 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}
+ 
