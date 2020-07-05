@@ -40,11 +40,11 @@ a {
   font-weight: 400;
 }
 .textvis {
-  opacity: 100%;
+  transform: scale(1);
   transition: 300ms all ease;
 }
 .texthid {
-  opacity: 0%;
+  transform: scale(0);
   transition: 300ms all ease;
 }
 
@@ -166,15 +166,6 @@ a {
   transform: scale(1.5);
   transition: 300ms ease;
 }
-.icodown:hover {
-  transform: translateY(8px);
-  transition: 300ms ease;
-}
-.icoopac:hover {
-  opacity: 50%;
-  transition: 300ms ease;
-}
-
 /* CARDS */
 
 /* Light */

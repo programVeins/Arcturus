@@ -85,7 +85,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>  
                         <div className="col">
-                            <div className={this.state.iconCol + " icoopac"}
+                            <div className={this.state.iconCol + " icozoom"}
                                 onMouseEnter={this.showhome} onMouseLeave={this.hidehome}>
                                 <NavLink className="nonedec" to="/home">
                                     <svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-hexagon-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>
                         <div className="col">
-                            <div className={this.state.iconCol + " icodown"}
+                            <div className={this.state.iconCol + " icozoom"}
                                 onMouseEnter={this.showblog} onMouseLeave={this.hideblog}>
                                 <NavLink className="nonedec" to="/blog">
                                     <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
