@@ -42,8 +42,12 @@ export default class AboutComp extends Component {
                                    <div className="col p-4">
                                         <div className="montfont text-8 text-justify">{me.aboutdes}</div>
                                    </div>
-                                   <div className="col-md-3 nopadding d-none d-md-block">
-                                        <img src={me.aboutimg} alt={me.name} align="right"
+                                   <div className="col-md-3 d-none d-md-block d-lg-none">
+                                        <img src={me.aboutimg} alt={me.name}
+                                        width="100%" height="auto" className={this.props.darkMode ? "aboutimgdark" : "aboutimglight"}/>
+                                   </div>
+                                   <div className="col-md-3 nopadding d-none d-lg-block">
+                                        <img src={me.aboutimg} alt={me.name}
                                         width="100%" height="auto" className={this.props.darkMode ? "aboutimgdark" : "aboutimglight"}/>
                                    </div>
                                 </div>
