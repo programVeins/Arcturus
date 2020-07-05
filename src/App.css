@@ -3,9 +3,9 @@
   text-align: center;
 }
 
-/* * {
+/*  * {
   border: 1px solid rgb(30, 64, 255) !important;
-} */
+}  */
 
 a {
   text-decoration: none;
@@ -107,8 +107,6 @@ a {
 .icolight {
   color: #eeeeee;
   transition: 300ms ease;
-  margin-left: calc(40%);
-  margin-right: calc(40%);
 }
   .icolight:hover {
     cursor: pointer;
@@ -122,8 +120,6 @@ a {
 .icodark {
   color: #111;
   transition: 300ms ease;
-  margin-left: calc(40%);
-  margin-right: calc(40%);
 }
   .icodark:hover {
     cursor: pointer;
@@ -373,3 +369,13 @@ a {
   transition: opacity 1000ms ease;
 }
  
+
+/* NavIcons */
+.largenav {
+  margin-left: 45%;
+  margin-right: 45%;
+}
+.smallnav {
+  margin-left: 25%;
+  margin-right: 25%;
+}
