@@ -40,11 +40,27 @@ a {
   font-weight: 400;
 }
 .textvis {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
 }
 .texthid {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
   transform: scale(0);
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
 }
 
@@ -60,11 +76,19 @@ a {
 /* Themes */
 .dark {
   background-color: #111;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
   color: #eeeeee;
 }
 .light {
   background-color: #ffffff;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
   color: #111;
 }
@@ -90,13 +114,29 @@ a {
   border-radius: 10px;
   color: #eeeeee;
   background: linear-gradient(145deg, #121212, #0f0f0f);
-  box-shadow:  5px 5px 10px #0b0b0b, 
+  -webkit-box-shadow: 5px 5px 10px #0b0b0b, 
+             -5px -5px 10px #171717;
+  -moz-box-shadow: 5px 5px 10px #0b0b0b, 
+             -5px -5px 10px #171717;
+  -ms-box-shadow: 5px 5px 10px #0b0b0b, 
+             -5px -5px 10px #171717;
+  -o-box-shadow: 5px 5px 10px #0b0b0b, 
+             -5px -5px 10px #171717;
+  box-shadow: 5px 5px 10px #0b0b0b, 
              -5px -5px 10px #171717;
 }
 .tagwhite {
   border-radius: 10px;
   color: #111111;
-  box-shadow:  5px 5px 10px #969696, 
+  -webkit-box-shadow: 5px 5px 10px #969696, 
+             -5px -5px 10px #ffffff;
+  -moz-box-shadow: 5px 5px 10px #969696, 
+             -5px -5px 10px #ffffff;
+  -ms-box-shadow: 5px 5px 10px #969696, 
+             -5px -5px 10px #ffffff;
+  -o-box-shadow: 5px 5px 10px #969696, 
+             -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #969696, 
              -5px -5px 10px #ffffff;
 }
 
@@ -106,11 +146,19 @@ a {
 /* Light */
 .icolight {
   color: #eeeeee;
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
   .icolight:hover {
     cursor: pointer;
-    transition: 300ms ease;
+    -webkit-transition: 300ms all ease;
+    -moz-transition: 300ms all ease;
+    -ms-transition: 300ms all ease;
+    -o-transition: 300ms all ease;
+    transition: 300ms all ease;
   }
   .icolight:active {
     color: #eeeeee;
@@ -119,12 +167,20 @@ a {
 /* Dark */
 .icodark {
   color: #111;
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
   .icodark:hover {
     cursor: pointer;
     color: #111;
-    transition: 300ms ease;
+    -webkit-transition: 300ms all ease;
+    -moz-transition: 300ms all ease;
+    -ms-transition: 300ms all ease;
+    -o-transition: 300ms all ease;
+    transition: 300ms all ease;
   }
   .icodark:active {
     color: #111;
@@ -134,33 +190,65 @@ a {
 .arrowlight {
   cursor: pointer;
   color: #111111;
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 .arrowlight:hover {
   cursor: pointer;
   color: #fa605b;
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 
 .arrowdark {
   cursor: pointer;
   color: #eeeeee;
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 .arrowdark:hover {
   cursor: pointer;
   color: #42dadf;
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 
 /* Anime */
 .icorotate:hover {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
   transform: rotate(20deg);
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 .icozoom:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
   transform: scale(1.5);
-  transition: 300ms ease;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
 }
 /* CARDS */
 
@@ -169,14 +257,42 @@ a {
   background-color: #ffffff;
   color: #111;
   border-radius: 8px;
-  box-shadow:  18px 18px 55px #d9d9d9, 
+  -webkit-box-shadow: 18px 18px 55px #d9d9d9, 
                 -18px -18px 55px #ffffff;
+  -moz-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+  -ms-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+  -o-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+  box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
 }
 .cardlight:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transform: scale(1.05);
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
-  box-shadow:  39px 39px 78px #d9d9d9, 
+  -webkit-box-shadow: 39px 39px 78px #d9d9d9, 
+             -39px -39px 78px #ffffff;
+  -moz-box-shadow: 39px 39px 78px #d9d9d9, 
+             -39px -39px 78px #ffffff;
+  -ms-box-shadow: 39px 39px 78px #d9d9d9, 
+             -39px -39px 78px #ffffff;
+  -o-box-shadow: 39px 39px 78px #d9d9d9, 
+             -39px -39px 78px #ffffff;
+  box-shadow: 39px 39px 78px #d9d9d9, 
              -39px -39px 78px #ffffff;
 }
 .smol{
@@ -189,14 +305,42 @@ a {
   background-color: #111111;
   color: #ffffff;
   border-radius: 8px;
-  box-shadow:  5px 5px 13px #0a0a0a, 
+  -webkit-box-shadow: 5px 5px 13px #0a0a0a, 
              -5px -5px 13px #181818;
+  -moz-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818;
+  -ms-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818;
+  -o-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818;
+  box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818;
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
 }
 .carddark:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);  
+  -webkit-transition: 300ms all ease;
+  -moz-transition: 300ms all ease;
+  -ms-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
   transition: 300ms all ease;
-  box-shadow:  16px 16px 32px #0a0a0a, 
+  -webkit-box-shadow: 16px 16px 32px #0a0a0a, 
+             -16px -16px 32px #181818;
+  -moz-box-shadow: 16px 16px 32px #0a0a0a, 
+             -16px -16px 32px #181818;
+  -ms-box-shadow: 16px 16px 32px #0a0a0a, 
+             -16px -16px 32px #181818;
+  -o-box-shadow: 16px 16px 32px #0a0a0a, 
+             -16px -16px 32px #181818;
+  box-shadow: 16px 16px 32px #0a0a0a, 
              -16px -16px 32px #181818;
 }
 
@@ -212,7 +356,15 @@ a {
   max-width: 50%;
   height: auto;
   width: auto\10; /* ie8 */
-  box-shadow:  18px 18px 55px #d9d9d9, 
+  -webkit-box-shadow: 18px 18px 55px #d9d9d9, 
+              -18px -18px 55px #ffffff;
+  -moz-box-shadow: 18px 18px 55px #d9d9d9, 
+              -18px -18px 55px #ffffff;
+  -ms-box-shadow: 18px 18px 55px #d9d9d9, 
+              -18px -18px 55px #ffffff;
+  -o-box-shadow: 18px 18px 55px #d9d9d9, 
+              -18px -18px 55px #ffffff;
+  box-shadow: 18px 18px 55px #d9d9d9, 
               -18px -18px 55px #ffffff;
   border-radius: 50%;
 }
@@ -231,7 +383,15 @@ a {
     max-width: 15%;
     height: auto;
     width: auto\10; /* ie8 */
-    box-shadow:  18px 18px 55px #d9d9d9, 
+    -webkit-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+    -moz-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+    -ms-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+    -o-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff;
+    box-shadow: 18px 18px 55px #d9d9d9, 
                 -18px -18px 55px #ffffff;
     border-radius: 50%;
   }
@@ -255,7 +415,15 @@ a {
 /* About Image */
 .aboutimglight {
   border-radius: 8px;
-  box-shadow:  -7px -7px 43px #d1d1d1, 
+  -webkit-box-shadow: -7px -7px 43px #d1d1d1, 
+             7px 7px 43px #ffffff;
+  -moz-box-shadow: -7px -7px 43px #d1d1d1, 
+             7px 7px 43px #ffffff;
+  -ms-box-shadow: -7px -7px 43px #d1d1d1, 
+             7px 7px 43px #ffffff;
+  -o-box-shadow: -7px -7px 43px #d1d1d1, 
+             7px 7px 43px #ffffff;
+  box-shadow: -7px -7px 43px #d1d1d1, 
              7px 7px 43px #ffffff;
 }
 .aboutimgdark {
@@ -278,7 +446,15 @@ a {
   background-color: #fa605b;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow:  5px 5px 10px #d4d4d4, 
+  -webkit-box-shadow: 5px 5px 10px #d4d4d4, 
+             -5px -5px 10px #ffffff;
+  -moz-box-shadow: 5px 5px 10px #d4d4d4, 
+             -5px -5px 10px #ffffff;
+  -ms-box-shadow: 5px 5px 10px #d4d4d4, 
+             -5px -5px 10px #ffffff;
+  -o-box-shadow: 5px 5px 10px #d4d4d4, 
+             -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #d4d4d4, 
              -5px -5px 10px #ffffff;
 }
 .butlight:hover {
@@ -301,7 +477,15 @@ a {
   background-color: #42dadf;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow:  5px 5px 10px #0a0a0a, 
+  -webkit-box-shadow: 5px 5px 10px #0a0a0a, 
+             -5px -5px 10px #181818;
+  -moz-box-shadow: 5px 5px 10px #0a0a0a, 
+             -5px -5px 10px #181818;
+  -ms-box-shadow: 5px 5px 10px #0a0a0a, 
+             -5px -5px 10px #181818;
+  -o-box-shadow: 5px 5px 10px #0a0a0a, 
+             -5px -5px 10px #181818;
+  box-shadow: 5px 5px 10px #0a0a0a, 
              -5px -5px 10px #181818;
 }
 .butdark:hover {
@@ -348,13 +532,37 @@ a {
 
 /* Fixed */
 .fixedlight:hover {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
   transform: none !important;
-  box-shadow:  18px 18px 55px #d9d9d9, 
+  -webkit-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff !important;
+  -moz-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff !important;
+  -ms-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff !important;
+  -o-box-shadow: 18px 18px 55px #d9d9d9, 
+                -18px -18px 55px #ffffff !important;
+  box-shadow: 18px 18px 55px #d9d9d9, 
                 -18px -18px 55px #ffffff !important;
 }
 .fixeddark:hover {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
   transform: none !important;
-  box-shadow:  5px 5px 13px #0a0a0a, 
+  -webkit-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818 !important;
+  -moz-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818 !important;
+  -ms-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818 !important;
+  -o-box-shadow: 5px 5px 13px #0a0a0a, 
+             -5px -5px 13px #181818 !important;
+  box-shadow: 5px 5px 13px #0a0a0a, 
              -5px -5px 13px #181818 !important;
 }
 
@@ -366,6 +574,10 @@ a {
 
 .fade-appear.fade-appear-active {
   opacity: 1;
+  -webkit-transition: opacity 1000ms ease;
+  -moz-transition: opacity 1000ms ease;
+  -ms-transition: opacity 1000ms ease;
+  -o-transition: opacity 1000ms ease;
   transition: opacity 1000ms ease;
 }
  
