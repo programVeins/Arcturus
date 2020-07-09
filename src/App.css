@@ -591,3 +591,11 @@ a {
   margin-left: 25%;
   margin-right: 25%;
 }
+
+@media (min-width: 992px) {
+  .blogtext {
+    padding-top: 80px !important;
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+  }
+}
