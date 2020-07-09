@@ -21,7 +21,7 @@ const me = {
     in every product I develop/design. Cheers! 🍻`,
     aboutdes: `Hello 👋🏽 I am Sabesh and I do Web development. Well, sometimes iOS Development.
     But all times, UI/UX desinging. I work extensively with ReactJS and Swift/SwiftUI and aspire
-    to create simple and good looking User Interfaces. I give equal importance to
+    to create simple and good looking User Interfaces 🦄 I give equal importance to
     stylesheets and behavior, because I believe, together, they can spark magic ✨ I've
     also had my share of backend experience with python-flask and SQLAlchemy with a
     few full stack projects. I have a keen eye of layouts and colors and do my best to
