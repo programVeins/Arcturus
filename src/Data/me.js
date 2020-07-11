@@ -26,7 +26,11 @@ const me = {
     also had my share of backend experience with python-flask and SQLAlchemy with a
     few full stack projects. I have a keen eye of layouts and colors and do my best to
     contribute to robust and good looking interfaces. And oh, I love Apple 🍎`,
-    skillset: "ReactJS ⚛️,Swift 🦅,SwiftUI 🦅,HTML 📝,JS ⚡️,CSS 🌈,Python 🐍,Django ⛓,Flask 🧪,Figma 🖋,XD ✏️,C++ 👾",
+    skillset: {
+        skillnames: "ReactJS,Swift,SwiftUI,HTML,JavaScript,CSS,Python,Django,Flask,Figma,AdobeXD,C++",
+        emojis: "⚛️,🦅,🦅,📝,⚡️,🌈,🐍,⛓,🧪,🖋,✏️,👾",
+    },
+    
     contact: [
         {
             ico:  "./assets/images/social/instagram.png",

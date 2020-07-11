@@ -7,7 +7,8 @@ import { Stagger, Fade } from 'react-animation-components';
 export default class AboutComp extends Component {
 
     render() {
-        var skills = me.skillset.split(',');
+        var skillnames = me.skillset.skillnames.split(',');
+        var emojis = me.skillset.emojis.split(',');
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container-fluid">
@@ -65,10 +66,11 @@ export default class AboutComp extends Component {
                             <br/>
                             <Fade in>
                                 <div className={"row my-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                                    {skills.map((skill,index) => {
+                                    {skillnames.map((skillname,index) => {
                                         return (
-                                            <div className="col-1.5 mx-4 my-4">
-                                                <span className="px-2 py-1 jostfont text-9">{skill}</span>
+                                            <div className="col-3 col-md-2 my-4">
+                                                <span className="px-3 py-1 jostfont text-9">{skillname}</span> <br/>
+                                                <span className="px-3 py-1 jostfont text-9">{emojis[index]}</span>
                                             </div>
                                         );
                                     })}
@@ -96,14 +98,14 @@ export default class AboutComp extends Component {
                                                         </div>
                                                     </a>
                                                 </div>
-                                                 <div className="col-2 mt-3 mx-auto d-none d-md-block d-lg-none">
+                                                 <div className="col-2 mt-3 mx-3 d-none d-md-block d-lg-none">
                                                  <a href={each.link} target="_blank" rel="noopener noreferrer">
-                                                     <div className={"p-3 " + (this.props.darkMode ? "carddark" : "cardlight")}>
+                                                     <div className={"p-4 " + (this.props.darkMode ? "carddark" : "cardlight")}>
                                                          <img src={each.ico} alt={each.link} height="auto" width="100%"/>
                                                      </div>
                                                  </a>
                                                 </div>
-                                                <div className="col-3 mt-3 mx-auto d-block d-sm-block d-md-none">
+                                                <div className="col-3 mt-3 mx-0 d-block d-sm-block d-md-none">
                                                  <a href={each.link} target="_blank" rel="noopener noreferrer">
                                                      <div className={"p-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
                                                          <img src={each.ico} alt={each.link} height="auto" width="100%"/>
