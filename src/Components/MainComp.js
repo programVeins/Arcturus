@@ -23,10 +23,6 @@ export default class MainComp extends Component {
     changePost(p) {
         this.setState({selectedPost: p});
     }
-    componentDidUpdate() {
-        console.log(this.state.selectedPost)
-    }
-
 
     toggleDarkMode() {
         this.setState({darkMode: !this.state.darkMode});

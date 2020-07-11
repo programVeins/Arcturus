@@ -30,7 +30,6 @@ export default class BlogComp extends Component {
     }
 
     render() {
-        console.log(this.state.posts)
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container">

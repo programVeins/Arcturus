@@ -119,7 +119,7 @@ export default class NavComp extends Component {
 
                         {/* Small Nav Icons */}
                         <div className="col d-block d-md-none">
-                            <div className={this.state.iconCol + " icorotate smallnav"} onClick={() => {this.handleTheme(); this.showtheme(); setInterval(() => {
+                            <div className={this.state.iconCol + " icorotate smallnav"} onClick={() => {this.handleTheme(); this.showtheme(); setTimeout(() => {
                                 this.hidetheme();
                             }, 1000);}}>
                                 {this.state.iconCol === "icolight" ?
@@ -135,7 +135,7 @@ export default class NavComp extends Component {
                         </div>  
                         <div className="col d-block d-md-none">
                             <div className={this.state.iconCol + " icozoom smallnav"}
-                                onClick={() => {this.showhome(); setInterval(() => {
+                                onClick={() => {this.showhome(); setTimeout(() => {
                                     this.hidehome();
                                 }, 1000);}}>
                                 <NavLink className="nonedec" to="/home">
@@ -147,7 +147,7 @@ export default class NavComp extends Component {
                         </div>  
                         <div className="col d-block d-md-none">
                             <div className={this.state.iconCol + " icozoom smallnav"}
-                                onClick={() => {this.showabout(); setInterval(() => {
+                                onClick={() => {this.showabout(); setTimeout(() => {
                                     this.hideabout();
                                 }, 1000);}}>
                                 <NavLink className="nonedec" to="/about">
@@ -159,7 +159,7 @@ export default class NavComp extends Component {
                         </div>
                         <div className="col d-block d-md-none">
                             <div className={this.state.iconCol + " icozoom smallnav"}
-                                onClick={() => {this.showblog(); setInterval(() => {
+                                onClick={() => {this.showblog(); setTimeout(() => {
                                     this.hideblog();
                                 }, 1000);}}>
                                 <NavLink className="nonedec" to="/blog">

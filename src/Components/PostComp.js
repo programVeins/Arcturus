@@ -59,7 +59,6 @@ export default class PostComp extends Component {
     }
 
     render() {
-        console.log(this.state.url)
         var current = this.state.thisPost.fields;
         var picc = this.state.thisPost.fields.banner.fields;
         return (

@@ -87,7 +87,6 @@ export default class AboutComp extends Component {
                             <Fade in>
                                 <div className="row justify-content-center">
                                     {me.contact.map((each,index) => {
-                                        console.log(each.ico)
                                         return (
                                             <>
                                                 <div className="col-1 mt-3 mx-auto d-none d-lg-block">
