@@ -5,6 +5,7 @@ import AboutComp from './AboutComp';
 import NavComp from './NavComp';
 import BlogComp from './BlogComp';
 import PostComp from './PostComp';
+import FooterComp from './FooterComp';
 
 
 export default class MainComp extends Component {
@@ -56,6 +57,7 @@ export default class MainComp extends Component {
 
                     <Redirect to="/home"/>
                 </Switch>
+                <FooterComp darkMode={this.state.darkMode}/>
             </div>
         )
     }

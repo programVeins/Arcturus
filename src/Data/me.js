@@ -9,6 +9,7 @@ const me = {
     id: 0,
     mainimg: "./assets/images/pics/sabesh.png",
     aboutimg: "./assets/images/pics/sabsabout.png",
+    memoji: "./assets/images/pics/memoji.png",
     name: "Sabesh Bharathi",
     tagline: "Web/iOS Developer. UI/UX Designer.",
     age: 19,
