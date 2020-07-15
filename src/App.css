@@ -500,25 +500,15 @@ a {
 
 /* Text Sizes */
 .text-1 {
-  font-size: calc(100% + 2.5vh + 2.5vw);
+  font-size: calc(100% + 5vh + 5vw);
 }
-.text-2 {
-  font-size: calc(100% + 2vh + 2vw);
-}
-.text-3 {
-  font-size: calc(100% + 1.5vh + 1.5vw);
-}
-.text-4 {
-  font-size: calc(100% + 1vh + 1vw);
-}
-.text-5 {
-  font-size: calc(100% + 0.8vh + 0.8vw);
+@media (max-width: 400px) {
+  .text-1 {
+    font-size: calc(100% + 3vh + 3vw);
+  }
 }
 .text-6 {
   font-size: calc(100% + 0.6vh + 0.6vw);
-}
-.text-7 {
-  font-size: calc(100% + 0.3vh + 0.3vw);
 }
 .text-8 {
   font-size: calc(100% + 0.2vh + 0.2vw);

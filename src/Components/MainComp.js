@@ -6,6 +6,7 @@ import NavComp from './NavComp';
 import BlogComp from './BlogComp';
 import PostComp from './PostComp';
 import FooterComp from './FooterComp';
+import NotFound from './NotFound';
 
 
 export default class MainComp extends Component {
@@ -40,6 +41,9 @@ export default class MainComp extends Component {
                     <Route exact path="/home" render={(props) =>
                         <HomeComp {...props}
                          darkMode={this.state.darkMode}/>}/>
+                        
+                    <Route exact path="/" render={(props) =>
+                        <Redirect to="/home"/>}/>
 
                     <Route exact path="/about" render={(props) =>
                         <AboutComp {...props}
@@ -55,7 +59,11 @@ export default class MainComp extends Component {
                          post={this.state.selectedPost}
                          darkMode={this.state.darkMode}/>}/>
 
-                    <Redirect to="/home"/>
+                    <Route exact path="/not-found" render={(props) =>
+                        <NotFound {...props}
+                         darkMode={this.state.darkMode}/>}/>
+
+                    <Redirect to="/not-found"/>
                 </Switch>
                 <FooterComp darkMode={this.state.darkMode}/>
             </div>
