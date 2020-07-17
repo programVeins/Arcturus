@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { CSSTransition } from 'react-transition-group';
 import { Stagger, Fade } from 'react-animation-components';
+import { Helmet } from 'react-helmet';
 
 export default class PostComp extends Component {
 
@@ -64,6 +65,11 @@ export default class PostComp extends Component {
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container">
+                        <Helmet>
+                            <title>{current.title}</title>
+                            <meta name="description" content={"Blog - " + current.title}/>
+                            <meta name="keywords" content="Sabesh Bharathi, Blog, Post, Development, Design"/>
+                        </Helmet>
                     <Stagger in delay={100} duration={300}>
                         <Fade in>
                             <div className="row">

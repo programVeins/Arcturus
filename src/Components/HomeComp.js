@@ -3,6 +3,7 @@ import projects from '../Data/projects';
 import me from '../Data/me';
 import { Stagger, Fade } from 'react-animation-components';
 import { CSSTransition } from 'react-transition-group';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -35,6 +36,11 @@ export default class HomeComp extends Component {
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container-fluid">
+                        <Helmet>
+                            <title>Home</title>
+                            <meta name="description" content="Sabesh Bharathi - Home Page"/>
+                            <meta name="keywords" content="Sabesh Bharathi, Blog, Portfolio"/>
+                        </Helmet>
                         <Stagger in duration={250}>
                             <Fade in>
                                 <div className="row">

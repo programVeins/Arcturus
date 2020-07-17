@@ -3,6 +3,7 @@ import projects from '../Data/projects'
 import me from '../Data/me'
 import { CSSTransition } from 'react-transition-group';
 import { Stagger, Fade } from 'react-animation-components';
+import { Helmet } from 'react-helmet';
 
 export default class AboutComp extends Component {
 
@@ -12,6 +13,11 @@ export default class AboutComp extends Component {
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container-fluid">
+                        <Helmet>
+                            <title>About</title>
+                            <meta name="description" content="Sabesh Bharathi - About"/>
+                            <meta name="keywords" content="Sabesh Bharathi, Portfolio, About, Projects"/>
+                        </Helmet>
                     <div className="container">
                         <Stagger in delay={50} duration={500}>
 

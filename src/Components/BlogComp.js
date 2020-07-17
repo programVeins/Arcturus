@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { CSSTransition } from 'react-transition-group';
 import { Stagger, Fade } from 'react-animation-components';
+import { Helmet } from 'react-helmet';
 
 
 export default class BlogComp extends Component {
@@ -33,6 +34,11 @@ export default class BlogComp extends Component {
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container">
+                        <Helmet>
+                            <title>Blog</title>
+                            <meta name="description" content="Sabesh Bharathi - Blog"/>
+                            <meta name="keywords" content="Sabesh Bharathi, Blog, Posts, Development, Design"/>
+                        </Helmet>
                     <Stagger in delay={50} duration={300}>
                         <Fade in>
                             <div className="row">
