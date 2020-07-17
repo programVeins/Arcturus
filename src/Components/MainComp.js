@@ -27,7 +27,12 @@ export default class MainComp extends Component {
     }
 
     toggleDarkMode() {
+        document.body.style.backgroundColor = this.state.darkMode ? "#ffffff" : "#111";
         this.setState({darkMode: !this.state.darkMode});
+    }
+
+    componentDidMount() {
+        document.body.style.backgroundColor = "#111";
     }
 
     render() {
