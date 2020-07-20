@@ -596,3 +596,8 @@ a {
     padding-right: 200px !important;
   }
 }
+
+.heart {
+  color: rgb(243, 85, 36) !important;
+  margin-left: 8px;
+}
