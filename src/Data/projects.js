@@ -21,16 +21,26 @@ const projects = [
     },
     {
         id: 2,
+        name: "SteamPunk",
+        description: "A retrofuturistic sci-fi theme to stir up various elements of nostalgic science fantasy as you hack away with VSCode",
+        extdes: "A Quick project that I ended up making because I didn't like any VSCode theme 100%. I decided to make mine own, to match the vibe I expected. I knew it had to be steampunk based and thus was born this theme, in just about one day and a crave for a Steampunk-ish VSCode vibe.",
+        link: "https://marketplace.visualstudio.com/items?itemName=sabeshbharathi.steampunk",
+        img: "./assets/images/thumbs/steampunk.png",
+        featured: true,
+        techStack: "CSS, VSCode, Theme"
+    },
+    {
+        id: 3,
         name: "Junker",
         description: "An iOS (iMessage) tool made to filter out spam SMS's without invading privacy. Made with swift",
         extdes: "Junker is the result of days of annoyance, using my messages app on my iPhone. I received about 10 spam SMS's a day, and didn't want to install a filter software owing to privacy reasons. So I made mine own. It has no database, it filters SMS's out if they have an '-' in the sender number (90% Indian spam SMS's are have a format of XY-00000) and if it finds words like 'oil spa' or 'discount'. It also carefully marks messages containing 'otp' or 'bank' as non-spam.",
         link: "https://github.com/programVeins/junker",
         img: "./assets/images/thumbs/junker.png",
-        featured: true,
+        featured: false,
         techStack: "XCode,Swift 5,iMessage Target"
     },
     {
-        id: 3,
+        id: 4,
         name: "CovidCam",
         description: "A hackathon winning prototype to trace the community spread of the virus Covid-19",
         extdes: "CovidCam is a hackathon winning prototype to trace community spread of the Covid-19 virus. It uses CoreLocation to trace user location and marks it with a timestamp at regular intervals of time, when it senses that the user is moving. This way, we can easily and effectively trace community spread.",
@@ -40,7 +50,7 @@ const projects = [
         techStack: "XCode,Swift 5,CoreLocation,MapKit"
     },
     {
-        id: 4,
+        id: 5,
         name: "Pottermoney",
         description: "Currency convertor for Harry Potter currency, made with vanilla JS",
         extdes: "It is one of my first projects made with vanilla HTML, CSS and JS. Inspired by Harry Potter, it's a currency convertor between Galleons, Sickles and Knuts, the currencies of the Potterverse.",
@@ -49,6 +59,7 @@ const projects = [
         featured: false,
         techStack: "HTML,CSS,JS"
     },
+    
 ]
 
 export default projects;
