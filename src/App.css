@@ -601,3 +601,12 @@ a {
   color: rgb(243, 85, 36) !important;
   margin-left: 8px;
 }
+
+/* Spinners */
+.spin-dark {
+  color: #42dadf;
+}
+
+.spin-light {
+  color: #fa605b;
+}

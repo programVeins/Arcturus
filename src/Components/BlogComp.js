@@ -10,7 +10,8 @@ import { Helmet } from 'react-helmet';
 export default class BlogComp extends Component {
    
     state = {
-        posts: []
+        posts: [],
+        isLoading: false
       }
 
     client = contentful.createClient({
@@ -19,6 +20,7 @@ export default class BlogComp extends Component {
       })
 
     componentDidMount() {
+        this.setState({isLoading: true});
         this.fetchPosts().then(this.setPosts);
     }
 
@@ -28,9 +30,15 @@ export default class BlogComp extends Component {
         this.setState({
           posts: response.items
         })
+        this.setState({isLoading: false});
     }
 
     render() {
+        if (this.state.isLoading) {
+            return  (<div className={"spinner-border " + (this.props.darkMode ? "spin-dark" : "spin-light")} role="status">
+                        <span className="sr-only">Loading...</span>
+                    </div>);
+        }
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container">

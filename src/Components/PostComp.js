@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet';
 export default class PostComp extends Component {
 
     state = {
+        isLoading: false,
         posts: [],
         url: "",
         thisPost: {
@@ -39,6 +40,7 @@ export default class PostComp extends Component {
       })
 
     componentDidMount() {
+        this.setState({isLoading: true});
         this.fetchPosts().then(this.setPosts);
         this.setState({url: window.location.href.split('blog/')[1]});
     }
@@ -56,12 +58,18 @@ export default class PostComp extends Component {
                   })
             }
         } )
+        this.setState({isLoading: false});
         
     }
 
     render() {
         var current = this.state.thisPost.fields;
         var picc = this.state.thisPost.fields.banner.fields;
+        if (this.state.isLoading) {
+            return  (<div className={"spinner-border " + (this.props.darkMode ? "spin-dark" : "spin-light")} role="status">
+                        <span className="sr-only">Loading...</span>
+                    </div>);
+        }
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
                 <div className="container">
