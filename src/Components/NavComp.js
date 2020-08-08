@@ -7,7 +7,6 @@ export default class NavComp extends Component {
         super(props)
     
         this.state = {
-             iconCol: this.props.darkMode ? "icolight" : "icodark",
              redirectAbout : false,
              redirectProjcts : false,
              redirectHome: false,
@@ -32,7 +31,6 @@ export default class NavComp extends Component {
     }
     
     handleTheme() {
-        this.setState({iconCol: this.props.darkMode ? "icodark" : "icolight"});
         this.props.toggleDarkMode();
     }
 
@@ -73,9 +71,9 @@ export default class NavComp extends Component {
 
                         {/* Large Nav Icons */}
                         <div className="col d-none d-md-block">
-                            <div className={this.state.iconCol + " icorotate largenav"} onClick={this.handleTheme}
+                            <div className={this.props.iconcol + " icorotate largenav"} onClick={this.handleTheme}
                                 onMouseEnter={this.showtheme} onMouseLeave={this.hidetheme}>
-                                {this.state.iconCol === "icolight" ?
+                                {this.props.iconcol === "icolight" ?
                                     <svg class="bi bi-sun" width="100%" height="auto" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/>
                                         <path fill-rule="evenodd" d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/>
@@ -87,7 +85,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>  
                         <div className="col d-none d-md-block">
-                            <div className={this.state.iconCol + " icozoom largenav"}
+                            <div className={this.props.iconcol + " icozoom largenav"}
                                 onMouseEnter={this.showhome} onMouseLeave={this.hidehome}>
                                 <NavLink className="nonedec" to="/home">
                                     <svg width="100%" height="auto" viewBox="0 0 16 16" class="bi bi-hexagon-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +95,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>  
                         <div className="col d-none d-md-block">
-                            <div className={this.state.iconCol + " icozoom largenav"}
+                            <div className={this.props.iconcol + " icozoom largenav"}
                                 onMouseEnter={this.showabout} onMouseLeave={this.hideabout}>
                                 <NavLink className="nonedec" to="/about">
                                     <svg class="bi bi-person-fill" width="100%" height="auto" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +105,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>
                         <div className="col d-none d-md-block">
-                            <div className={this.state.iconCol + " icozoom largenav"}
+                            <div className={this.props.iconcol + " icozoom largenav"}
                                 onMouseEnter={this.showblog} onMouseLeave={this.hideblog}>
                                 <NavLink className="nonedec" to="/blog">
                                     <svg width="100%" height="auto" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -119,10 +117,10 @@ export default class NavComp extends Component {
 
                         {/* Small Nav Icons */}
                         <div className="col d-block d-md-none">
-                            <div className={this.state.iconCol + " icorotate smallnav"} onClick={() => {this.handleTheme(); this.showtheme(); setTimeout(() => {
+                            <div className={this.props.iconcol + " icorotate smallnav"} onClick={() => {this.handleTheme(); this.showtheme(); setTimeout(() => {
                                 this.hidetheme();
                             }, 1000);}}>
-                                {this.state.iconCol === "icolight" ?
+                                {this.props.iconcol === "icolight" ?
                                     <svg class="bi bi-sun" width="100%" height="auto" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.5 8a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0z"/>
                                         <path fill-rule="evenodd" d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z"/>
@@ -134,7 +132,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>  
                         <div className="col d-block d-md-none">
-                            <div className={this.state.iconCol + " icozoom smallnav"}
+                            <div className={this.props.iconcol + " icozoom smallnav"}
                                 onClick={() => {this.showhome(); setTimeout(() => {
                                     this.hidehome();
                                 }, 1000);}}>
@@ -146,7 +144,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>  
                         <div className="col d-block d-md-none">
-                            <div className={this.state.iconCol + " icozoom smallnav"}
+                            <div className={this.props.iconcol + " icozoom smallnav"}
                                 onClick={() => {this.showabout(); setTimeout(() => {
                                     this.hideabout();
                                 }, 1000);}}>
@@ -158,7 +156,7 @@ export default class NavComp extends Component {
                             </div>
                         </div>
                         <div className="col d-block d-md-none">
-                            <div className={this.state.iconCol + " icozoom smallnav"}
+                            <div className={this.props.iconcol + " icozoom smallnav"}
                                 onClick={() => {this.showblog(); setTimeout(() => {
                                     this.hideblog();
                                 }, 1000);}}>

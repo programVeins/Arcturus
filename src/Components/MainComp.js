@@ -16,7 +16,8 @@ export default class MainComp extends Component {
     
         this.state = {
             selectedPost: 0,
-            darkMode: true
+            darkMode: true,
+            iconCol: "icolight"
         }
         this.toggleDarkMode = this.toggleDarkMode.bind(this);
         this.changePost = this.changePost.bind(this);
@@ -29,17 +30,23 @@ export default class MainComp extends Component {
     toggleDarkMode() {
         document.body.style.backgroundColor = this.state.darkMode ? "#ffffff" : "#111";
         this.setState({darkMode: !this.state.darkMode});
+        this.setState({iconCol: this.state.darkMode ? "icodark" : "icolight"});
     }
 
     componentDidMount() {
         document.body.style.backgroundColor = "#111";
+        let sysLight = window.matchMedia('(prefers-color-scheme: light)');
+        if (sysLight.matches) {
+            this.toggleDarkMode()
+        }
     }
 
     render() {
         return (
             <div className={(this.state.darkMode ? "dark" : "light") + " full container-fluid"}>
                 <br/><br/><br/><br/><br/><br/>
-                <NavComp toggleDarkMode={this.toggleDarkMode} darkMode={this.state.darkMode}/>
+                <NavComp toggleDarkMode={this.toggleDarkMode} darkMode={this.state.darkMode}
+                iconcol={this.state.iconCol}/>
                 <br/><br/><br/>
                 <Switch>
 
