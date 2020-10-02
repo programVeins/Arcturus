@@ -510,6 +510,9 @@ a {
 .text-6 {
   font-size: calc(100% + 0.6vh + 0.6vw);
 }
+.text-7 {
+  font-size: calc(100% + 0.3vh + 0.3vw);
+}
 .text-8 {
   font-size: calc(100% + 0.2vh + 0.2vw);
 }

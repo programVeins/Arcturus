@@ -18,7 +18,7 @@ const me = {
     the beauties and aesthetics of the web. I also work extensively
     with iOS using swift. I feel like it's every consumer's necessity
     to experience quality products, with a robust feature-set whilst
-    enjoying a hassle-free User eXperience ☄️. I strive to make that possible
+    enjoying a hassle-free User Experience ☄️ I strive to make that possible
     in every product I develop/design. Cheers! 🍻`,
     aboutdes: `Hello 👋🏽 I am Sabesh and I do Web development. Well, sometimes iOS Development.
     But all times, UI/UX desinging. I work extensively with ReactJS and Swift/SwiftUI and aspire

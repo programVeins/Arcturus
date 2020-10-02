@@ -71,8 +71,8 @@ export default class HomeComp extends Component {
                             <Fade in>
                                 <div className="row">
                                     <div className="col">
-                                        <div className={this.props.darkMode ? "carddark" : "cardlight"}>
-                                            <h5 className={"montfont p-4 text-8 text-justify " + (this.props.darkMode ? "lightfont" : "darkfont") }>
+                                        <div>
+                                            <h5 className={"montfont p-3 text-7 text-justify " + (this.props.darkMode ? "lightfont" : "darkfont") }>
                                                 {me.maindes}
                                             </h5>
                                         </div>
