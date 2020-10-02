@@ -14,7 +14,7 @@ export default class FooterComp extends Component {
                         <img src={me.memoji} alt="Memoji" height="auto" width="100%"/>
                     </div>
                 </div>
-                <p className="jostfont text-8">Sabesh Bharathi © 2020</p>
+        <p className="jostfont text-8">Sabesh Bharathi © {(new Date()).getFullYear()}</p>
                 <span className="jostfont text-9">
                     Developed with  
                 </span>
