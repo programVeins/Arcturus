@@ -41,7 +41,7 @@ export default class AboutComp extends Component {
                             </Fade>
                             <br/>
                             <Fade in>
-                                <div className={"row align-items-center my-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
+                                <div className={"row align-items-center my-2 " + (this.props.darkMode ? "carddark fixeddark" : "cardlight fixedlight")}>
                                     <div className="col-md-3 p-5 d-block d-md-none">
                                         <img src={me.aboutimg} alt={me.name} align="right"
                                         width="100%" height="auto" className={this.props.darkMode ? "aboutimgdark" : "aboutimglight"}/>
@@ -71,7 +71,7 @@ export default class AboutComp extends Component {
                             </Fade>
                             <br/>
                             <Fade in>
-                                <div className={"row my-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
+                                <div className={"row my-2 " + (this.props.darkMode ? "carddark fixeddark" : "cardlight fixedlight")}>
                                     {skillnames.map((skillname,index) => {
                                         return (
                                             <div className="col-3 col-md-2 my-4">
