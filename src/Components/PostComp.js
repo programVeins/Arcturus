@@ -6,6 +6,9 @@ import Moment from 'react-moment';
 import { CSSTransition } from 'react-transition-group';
 import { Stagger, Fade } from 'react-animation-components';
 import { Helmet } from 'react-helmet';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark, nord } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 
 export default class PostComp extends Component {
 
@@ -99,7 +102,26 @@ export default class PostComp extends Component {
                                     <img alt={picc.title} src={picc.file.url}
                                     width="100%" height="auto" className="blogimg"/>
                                     <h3 className="jostfont px-3 mt-5">{current.title}</h3>
-                                    <p className="montfont text-justify text-8 p-5 blogtext"><Markdown source={current.content} escapeHtml={false}/></p>
+                                    <p className="montfont text-justify text-8 p-5 blogtext">
+                                        {
+                                            current.content.split('<test>').map((eachPart, index) => {
+                                                if (index % 2 === 0)
+                                                {
+                                                    return <Markdown source={eachPart} escapeHtml={false}/>
+                                                }
+
+                                                return (
+                                                    <SyntaxHighlighter language="css"
+                                                    style={(this.props.darkMode) ? nord : atomOneDark}
+                                                    className={(this.props.darkMode) ? "code-block" : "code-block code-shadow"}
+                                                    >
+                                                        {"\n" + eachPart + "\n"}
+                                                    </SyntaxHighlighter>
+                                                );
+                                            })
+                                        }
+                                        
+                                    </p>
                                     <br/>
                                     <p className="montfont p-5 text-9 text-left">
                                         {current.date !== "" ?

@@ -613,3 +613,13 @@ a {
 .spin-light {
   color: #fa605b;
 }
+
+.code-block {
+  border-radius: 10px;
+  
+}
+
+.code-shadow {
+  box-shadow: 9px 9px 55px #d9d9d9, 
+  -9px -9px 55px #d9d9d9;
+}
