@@ -41,7 +41,7 @@ export default class BlogComp extends Component {
         }
         return (
             <CSSTransition in={true} appear={true} timeout={800} classNames="fade">
-                <div className="container">
+                <div className="container-fluid">
                         <Helmet>
                             <title>Blog</title>
                             <meta name="description" content="Sabesh Bharathi - Blog"/>
@@ -61,7 +61,7 @@ export default class BlogComp extends Component {
                                 { this.state.posts.map(({fields}, i) =>
                                     {
                                         return (
-                                                <div className={"col-lg-3 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
+                                                <div className={"col-lg-2 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
                                                     onClick={() => this.props.changePost(i)}>
                                                     <Link to={`/blog/${fields.path}`} className="nonedec">
                                                         <img className="blogimg mb-5 " alt={fields.title} src={fields.pic.fields.file.url} height="auto" width="100%"/>
