@@ -5,13 +5,15 @@ import Moment from 'react-moment';
 import { CSSTransition } from 'react-transition-group';
 import { Stagger, Fade } from 'react-animation-components';
 import { Helmet } from 'react-helmet';
+import craftPosts from '../Data/craftPosts';
 
 
 export default class BlogComp extends Component {
    
     state = {
         posts: [],
-        isLoading: false
+        isLoading: false,
+        craftPosts: craftPosts
       }
 
     client = contentful.createClient({
@@ -57,11 +59,11 @@ export default class BlogComp extends Component {
                         </Fade>
                         <br/><br/><br/>
                         <Fade in>
-                            <div className="row justify-content-center">
+                            <div className="row justify-content-around justify-content-md-between">
                                 { this.state.posts.map(({fields}, i) =>
                                     {
                                         return (
-                                                <div className={"col-lg-2 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
+                                                <div className={"col-lg-3 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
                                                     onClick={() => this.props.changePost(i)}>
                                                     <Link to={`/blog/${fields.path}`} className="nonedec">
                                                         <img className="blogimg mb-5 " alt={fields.title} src={fields.pic.fields.file.url} height="auto" width="100%"/>
@@ -69,6 +71,22 @@ export default class BlogComp extends Component {
                                                         <p className="montfont text-justify p-4">{fields.content.substr(0,200)} ...</p>
                                                         <p className="montfont text-left pl-4"><Moment format="YYYY/MM/DD">{fields.date}</Moment></p>
                                                     </Link>
+                                                </div>
+                                        );
+                                    }
+                                )}
+
+                                { this.state.craftPosts.map((item, i) =>
+                                    {
+                                        return (
+                                                <div className={"col-lg-3 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
+                                                    onClick={() => this.props.changePost(i)}>
+                                                    <a href={item.link} className="nonedec">
+                                                        <img className="blogimg mb-5 " alt={item.title} src={item.thumbnail} height="auto" width="100%"/>
+                                                        <h5 className="jostfont">{item.title}</h5>
+                                                        <p className="montfont text-justify p-4">{item.desc.substr(0,200)}</p>
+                                                        <p className="montfont text-left pl-4">{item.date}</p>
+                                                    </a>
                                                 </div>
                                         );
                                     }
