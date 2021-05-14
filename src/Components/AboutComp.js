@@ -4,10 +4,18 @@ import me from '../Data/me'
 import { CSSTransition } from 'react-transition-group';
 import { Stagger, Fade } from 'react-animation-components';
 import { Helmet } from 'react-helmet';
+import IllCarousel from './Carousel';
 
 export default class AboutComp extends Component {
+    
+    state = {
+        currentPage: 1,
+        totalPages: Math.ceil(projects.length / 3)
+    }
 
     render() {
+
+        console.log(this.state)
         var skillnames = me.skillset.skillnames.split(',');
         var emojis = me.skillset.emojis.split(',');
         return (
@@ -19,7 +27,7 @@ export default class AboutComp extends Component {
                             <meta name="keywords" content="Sabesh Bharathi, Portfolio, About, Projects"/>
                         </Helmet>
                     <div className="container">
-                        <Stagger in delay={50} duration={500}>
+                        <Stagger in delay={0} duration={500}>
 
                             <Fade in>
                                 <div className="row">
@@ -126,7 +134,7 @@ export default class AboutComp extends Component {
                             <br/><br/>
         
                             <Fade in>
-                                <div className="row">
+                                <div className="row" id="proj">
                                    <div className="col">
                                       <h3 className="jostfont text-left">Projects</h3>
                                    </div>
@@ -135,6 +143,8 @@ export default class AboutComp extends Component {
                             </Fade>
                             {projects.map((proj, index) => {
                                 var tags = proj.techStack.split(",")
+
+                                if (Math.ceil((proj.id+1) / 3) === this.state.currentPage)
                                 return(
                                     <Fade in>
                                             <div className={"row justify-content-center align-items-center my-2 py-5 " + (this.props.darkMode ? "carddark" : "cardlight")}>
@@ -169,7 +179,45 @@ export default class AboutComp extends Component {
                                             <br/><br/>
                                     </Fade>
                                 )
+
+                                else {
+                                    return <div></div>
+                                }
                             })}
+
+                            <Fade in>
+                                <div className="flex row justify-content-center">
+                                    {
+                                        [...Array(this.state.totalPages)].map((e,i) => {
+                                            return(
+                                                <div className="col-1 mt-3 mx-auto mx-md-1 pagination" key={i}>
+                                                    <div onClick={() => {
+                                                    this.setState({currentPage: i+1})
+                                                    document.getElementById('proj').scrollIntoView();    
+                                                }}
+                                                        className={"px-4 py-3 " + (this.props.darkMode ? "carddark fixeddark" : "cardlight fixedlight")}>
+                                                        <h4 className={this.state.currentPage === (i+1) ? ( this.props.darkMode ? "spin-dark" : "spin-light") : "" }>{i+1}</h4>
+                                                    </div>
+                                                </div>
+                                            );
+                                        })
+                                    }
+                                </div>
+                            </Fade>
+
+
+                            <Fade in>
+                                <div className="row mt-5" id="proj">
+                                   <div className="col">
+                                      <h3 className="jostfont text-left">Illustrations</h3>
+                                   </div>
+                                </div>
+                                <br/>
+                            </Fade>
+
+                            <Fade in>
+                                <IllCarousel/>
+                            </Fade>   
                         </Stagger>
                     </div>
                 </div>

@@ -42,8 +42,8 @@ const me = {
             link: "https://twitter.com/sabeshbharathi"
         },
         {
-            ico:  "./assets/images/social/medium.png",
-            link: "https://medium.com/@sabstanceabuse"
+            ico:  "./assets/images/social/dribbble.png",
+            link: "https://dribbble.com/sabstanceabuse"
         },
         {
             ico:  "./assets/images/social/github.png",

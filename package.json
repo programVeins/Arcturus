@@ -16,6 +16,7 @@
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-spring-3d-carousel": "^1.2.1",
     "react-syntax-highlighter": "^15.2.1",
     "react-transition-group": "^4.4.1",
     "reactstrap": "^8.4.1"

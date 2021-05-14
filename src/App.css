@@ -574,11 +574,6 @@ a {
 
 .fade-appear.fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 1000ms ease;
-  -moz-transition: opacity 1000ms ease;
-  -ms-transition: opacity 1000ms ease;
-  -o-transition: opacity 1000ms ease;
-  transition: opacity 1000ms ease;
 }
  
 
@@ -622,4 +617,30 @@ a {
 .code-shadow {
   box-shadow: 9px 9px 55px #d9d9d9, 
   -9px -9px 55px #d9d9d9;
+}
+
+.pagination {
+  cursor: pointer;
+}
+
+.carousel-wrapper {
+  width: 80%;
+  height: 30em;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .carousel-wrapper {
+    width: 80%;
+    height: 20em;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-wrapper {
+    width: 80%;
+    height: 8em;
+    margin: 0 auto;
+  }
 }
