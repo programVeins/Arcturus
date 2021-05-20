@@ -216,7 +216,7 @@ export default class AboutComp extends Component {
                             </Fade>
 
                             <Fade in>
-                                <IllCarousel/>
+                                <IllCarousel darkMode={this.props.darkMode}/>
                             </Fade>   
                         </Stagger>
                     </div>

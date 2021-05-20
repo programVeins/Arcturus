@@ -14,7 +14,7 @@ export default class IllCarousel extends Component {
 
   render() {
     return (
-      <div className="carousel-wrapper">
+      <div className={this.props.darkMode ? "illusDark carousel-wrapper"  : "carousel-wrapper"}>
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}
