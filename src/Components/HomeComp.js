@@ -45,7 +45,7 @@ export default class HomeComp extends Component {
                             <Fade in>
                                 <div className="row">
                                     <div className="col">
-                                        <img className={this.props.darkMode ? "imgdark" : "imglight"} alt="mainpic" src={me.mainimg}/>
+                                        <img className={this.props.darkMode ? "imgdark" : "imglight"} alt="mainpic" src={this.props.darkMode ? me.mainimg : me.mainimgLight}/>
                                     </div>
                                 </div>
                                 <br/><br/>

@@ -7,8 +7,9 @@ function getAge(d1, d2){
 
 const me = {
     id: 0,
-    mainimg: "/assets/images/pics/sabesh.png",
-    aboutimg: "/assets/images/pics/sabsabout.png",
+    mainimg: "/assets/images/pics/sabesh.jpeg",
+    mainimgLight: "/assets/images/pics/sabesh.png",
+    aboutimg: "/assets/images/pics/sabs.JPG",
     memoji: "/assets/images/pics/memoji.png",
     name: "Sabesh Bharathi",
     tagline: "Web/iOS Developer. UI/UX Designer.",

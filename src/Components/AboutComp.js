@@ -134,7 +134,7 @@ export default class AboutComp extends Component {
                             <br/><br/>
         
                             <Fade in>
-                                <div className="row" id="proj">
+                                <div className="row mb-4" id="proj">
                                    <div className="col">
                                       <h3 className="jostfont text-left">Projects</h3>
                                    </div>
