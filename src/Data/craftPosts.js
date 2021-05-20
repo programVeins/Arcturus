@@ -31,6 +31,14 @@ const craftPosts = [
         desc: 'Here are some useful tools and hacks that you might possibly need while architecting frontends of the web. They have been pretty handy to me and can help you overcome a few everyday caveats.',
         date: '2021/05/14'
     },
+    {
+        id: 3,
+        title: 'Cascasding Style Sheets',
+        thumbnail: 'assets/images/craftthumbs/css.jpg',
+        link: 'https://www.craft.do/s/Q0ass91hsw76JH',
+        desc: 'I have finally begun to learn CSS *properly* ! Here\'s the resources I\'ve been using to learn CSS, it basically comprises of a tutorial from web.dev combined with the CSS Podcast.',
+        date: '2021/05/19'
+    },
 
 ]
 

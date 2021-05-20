@@ -59,7 +59,7 @@ export default class BlogComp extends Component {
                         </Fade>
                         <br/><br/><br/>
                         <Fade in>
-                            <div className="row justify-content-around justify-content-md-between">
+                            <div className="row justify-content-center">
                                 { this.state.posts.map(({fields}, i) =>
                                     {
                                         return (
