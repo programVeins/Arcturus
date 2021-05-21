@@ -20,6 +20,12 @@ export default class FooterComp extends Component {
                 </span>
                 <span className="heart">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="MyGradient">
+                                <stop offset="5%" stop-color={this.props.darkMode ? "#46e9bb" : "#ec8841" } />
+                                <stop offset="95%" stop-color={this.props.darkMode ? "#43b6e3" : "#ec5567" } />
+                            </linearGradient>
+                        </defs>
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                     </svg>
                 </span>

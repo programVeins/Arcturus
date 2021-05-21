@@ -169,6 +169,12 @@ export default class AboutComp extends Component {
                                                     <a href={proj.link} target="_blank" rel="noopener noreferrer">
                                                         <span className={"float-right mt-3 mx-3 " + (this.props.darkMode ? "arrowdark" : "arrowlight")}>
                                                             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                                <defs>
+                                                                    <linearGradient id="MyGradient">
+                                                                    <stop offset="5%" stop-color={this.props.darkMode ? "#46e9bb" : "#ec8841" } />
+                                                                    <stop offset="95%" stop-color={this.props.darkMode ? "#43b6e3" : "#ec5567" } />
+                                                                    </linearGradient>
+                                                                </defs>
                                                                 <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
                                                                 <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
                                                             </svg>
@@ -196,7 +202,7 @@ export default class AboutComp extends Component {
                                                     document.getElementById('proj').scrollIntoView();    
                                                 }}
                                                         className={"px-4 py-3 " + (this.props.darkMode ? "carddark fixeddark" : "cardlight fixedlight")}>
-                                                        <h4 className={this.state.currentPage === (i+1) ? ( this.props.darkMode ? "spin-dark" : "spin-light") : "" }>{i+1}</h4>
+                                                        <h4 className={this.state.currentPage === (i+1) ? ( this.props.darkMode ? "grad-text-dark" : "grad-text-light") : "" }>{i+1}</h4>
                                                     </div>
                                                 </div>
                                             );

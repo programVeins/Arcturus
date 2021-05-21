@@ -7,6 +7,12 @@
   border: 1px solid rgb(30, 64, 255) !important;
 }  */
 
+
+:root {
+  --light-grad: linear-gradient(to right, #ec8841 , #ec5567);
+  --dark-grad: linear-gradient(to right, #46e9bb , #43b6e3);
+}
+
 a {
   text-decoration: none;
 }
@@ -102,12 +108,14 @@ a {
 
 .taglight {
   border-radius: 10px;
-  background-color: #fa605b;
+  background-image: var(--light-grad);
+  
   color: #ffffff;
 }
 .tagdark {
   border-radius: 10px;
-  background-color: #42dadf;
+  background-image: var(--dark-grad);
+  
   color: #111111;
 }
 .tagblack {
@@ -196,9 +204,9 @@ a {
   -o-transition: 300ms all ease;
   transition: 300ms all ease;
 }
-.arrowlight:hover {
+.arrowlight:hover path{
   cursor: pointer;
-  color: #fa605b;
+  fill: url(#MyGradient);
   -webkit-transition: 300ms all ease;
   -moz-transition: 300ms all ease;
   -ms-transition: 300ms all ease;
@@ -215,9 +223,9 @@ a {
   -o-transition: 300ms all ease;
   transition: 300ms all ease;
 }
-.arrowdark:hover {
+.arrowdark:hover path{
   cursor: pointer;
-  color: #42dadf;
+  fill: url(#MyGradient);
   -webkit-transition: 300ms all ease;
   -moz-transition: 300ms all ease;
   -ms-transition: 300ms all ease;
@@ -256,17 +264,17 @@ a {
 .cardlight {
   background-color: #ffffff;
   color: #111;
-  border-radius: 8px;
-  -webkit-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff;
-  -moz-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff;
-  -ms-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff;
-  -o-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff;
-  box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff;
+  -moz-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff;
+  -ms-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff;
+  -o-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff;
+  box-shadow:  23px 23px 78px #e3e3e3,
+             -23px -23px 78px #ffffff;
   -webkit-transition: 300ms all ease;
   -moz-transition: 300ms all ease;
   -ms-transition: 300ms all ease;
@@ -284,16 +292,16 @@ a {
   -ms-transition: 300ms all ease;
   -o-transition: 300ms all ease;
   transition: 300ms all ease;
-  -webkit-box-shadow: 39px 39px 78px #d9d9d9, 
-             -39px -39px 78px #ffffff;
-  -moz-box-shadow: 39px 39px 78px #d9d9d9, 
-             -39px -39px 78px #ffffff;
-  -ms-box-shadow: 39px 39px 78px #d9d9d9, 
-             -39px -39px 78px #ffffff;
-  -o-box-shadow: 39px 39px 78px #d9d9d9, 
-             -39px -39px 78px #ffffff;
-  box-shadow: 39px 39px 78px #d9d9d9, 
-             -39px -39px 78px #ffffff;
+  -webkit-box-shadow: 35px 35px 70px #e3e3e3,
+  -35px -35px 70px #ffffff;
+  -moz-box-shadow: 35px 35px 70px #e3e3e3,
+  -35px -35px 70px #ffffff;
+  -ms-box-shadow: 35px 35px 70px #e3e3e3,
+  -35px -35px 70px #ffffff;
+  -o-box-shadow: 35px 35px 70px #e3e3e3,
+  -35px -35px 70px #ffffff;
+  box-shadow:  35px 35px 70px #e3e3e3,
+             -35px -35px 70px #ffffff;
 }
 .smol{
   margin-left: 20% !important;
@@ -304,7 +312,7 @@ a {
 .carddark {
   background-color: #111111;
   color: #ffffff;
-  border-radius: 8px;
+  border-radius: 20px;
   -webkit-box-shadow: 5px 5px 13px #0a0a0a, 
              -5px -5px 13px #181818;
   -moz-box-shadow: 5px 5px 13px #0a0a0a, 
@@ -406,7 +414,7 @@ a {
 
 /* Blog Image */
 .blogimg {
-  border-radius: 8px 8px 0px 0px; 
+  border-radius: 20px 20px 0px 0px; 
 }
 .rounded {
   border-radius: 50%;
@@ -414,7 +422,7 @@ a {
 
 /* About Image */
 .aboutimglight {
-  border-radius: 8px;
+  border-radius: 20px;
   -webkit-box-shadow: -7px -7px 43px #d1d1d1, 
              7px 7px 43px #ffffff;
   -moz-box-shadow: -7px -7px 43px #d1d1d1, 
@@ -427,7 +435,7 @@ a {
              7px 7px 43px #ffffff;
 }
 .aboutimgdark {
-  border-radius: 8px;
+  border-radius: 20px;
 }
 .nopadding {
   padding: 0;
@@ -443,19 +451,19 @@ a {
   padding-bottom: 3%;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #fa605b;
+  background-image: var(--light-grad);
   text-decoration: none;
   border-radius: 8px;
-  -webkit-box-shadow: 5px 5px 10px #d4d4d4, 
-             -5px -5px 10px #ffffff;
-  -moz-box-shadow: 5px 5px 10px #d4d4d4, 
-             -5px -5px 10px #ffffff;
-  -ms-box-shadow: 5px 5px 10px #d4d4d4, 
-             -5px -5px 10px #ffffff;
-  -o-box-shadow: 5px 5px 10px #d4d4d4, 
-             -5px -5px 10px #ffffff;
-  box-shadow: 5px 5px 10px #d4d4d4, 
-             -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 3px 3px 10px #d4d4d4, 
+             -3px -3px 10px #ffffff;
+  -moz-box-shadow: 3px 3px 10px #d4d4d4, 
+             -3px -3px 10px #ffffff;
+  -ms-box-shadow: 3px 3px 10px #d4d4d4, 
+             -3px -3px 10px #ffffff;
+  -o-box-shadow: 3px 3px 10px #d4d4d4, 
+             -3px -3px 10px #ffffff;
+  box-shadow: 3px 3px 10px #d4d4d4, 
+             -3px -3px 10px #ffffff;
 }
 .butlight:hover {
   color: #eeeeee;
@@ -474,7 +482,7 @@ a {
   padding-bottom: 3%;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #42dadf;
+  background-image: var(--dark-grad);
   text-decoration: none;
   border-radius: 8px;
   -webkit-box-shadow: 5px 5px 10px #0a0a0a, 
@@ -537,16 +545,16 @@ a {
   -ms-transform: none !important;
   -o-transform: none !important;
   transform: none !important;
-  -webkit-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff !important;
-  -moz-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff !important;
-  -ms-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff !important;
-  -o-box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff !important;
-  box-shadow: 18px 18px 55px #d9d9d9, 
-                -18px -18px 55px #ffffff !important;
+  -webkit-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff !important;
+  -moz-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff !important;
+  -ms-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff !important;
+  -o-box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff !important;
+  box-shadow: 23px 23px 78px #e3e3e3,
+  -23px -23px 78px #ffffff !important;
 }
 .fixeddark:hover {
   -webkit-transform: none !important;
@@ -596,8 +604,11 @@ a {
 }
 
 .heart {
-  color: rgb(243, 85, 36) !important;
   margin-left: 8px;
+}
+
+.heart path{
+  fill: url(#MyGradient);
 }
 
 /* Spinners */
@@ -607,6 +618,18 @@ a {
 
 .spin-light {
   color: #fa605b;
+}
+
+.grad-text-light {
+  background: var(--light-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grad-text-dark {
+  background: var(--dark-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .code-block {
