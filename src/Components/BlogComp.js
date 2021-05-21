@@ -24,6 +24,7 @@ export default class BlogComp extends Component {
     componentDidMount() {
         this.setState({isLoading: true});
         this.fetchPosts().then(this.setPosts);
+        craftPosts.reverse()
     }
 
     fetchPosts = () => this.client.getEntries()
@@ -60,22 +61,6 @@ export default class BlogComp extends Component {
                         <br/><br/><br/>
                         <Fade in>
                             <div className="row justify-content-center">
-                                { this.state.posts.map(({fields}, i) =>
-                                    {
-                                        return (
-                                                <div className={"col-lg-3 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
-                                                    onClick={() => this.props.changePost(i)}>
-                                                    <Link to={`/blog/${fields.path}`} className="nonedec">
-                                                        <img className="blogimg mb-5 " alt={fields.title} src={fields.pic.fields.file.url} height="auto" width="100%"/>
-                                                        <h5 className="jostfont">{fields.title}</h5>
-                                                        <p className="montfont text-justify p-4">{fields.content.substr(0,200)} ...</p>
-                                                        <p className="montfont text-left pl-4"><Moment format="YYYY/MM/DD">{fields.date}</Moment></p>
-                                                    </Link>
-                                                </div>
-                                        );
-                                    }
-                                )}
-
                                 { this.state.craftPosts.map((item, i) =>
                                     {
                                         return (
@@ -87,6 +72,22 @@ export default class BlogComp extends Component {
                                                         <p className="montfont text-justify p-4">{item.desc.substr(0,200)}</p>
                                                         <p className="montfont text-left pl-4">{item.date}</p>
                                                     </a>
+                                                </div>
+                                        );
+                                    }
+                                )}
+
+                                { this.state.posts.map(({fields}, i) =>
+                                    {
+                                        return (
+                                                <div className={"col-lg-3 my-5 mx-5 blogcard p-0 " + (this.props.darkMode ? "carddark" : "cardlight")}
+                                                    onClick={() => this.props.changePost(i)}>
+                                                    <Link to={`/blog/${fields.path}`} className="nonedec">
+                                                        <img className="blogimg mb-5 " alt={fields.title} src={fields.pic.fields.file.url} height="auto" width="100%"/>
+                                                        <h5 className="jostfont">{fields.title}</h5>
+                                                        <p className="montfont text-justify p-4">{fields.content.substr(0,200)} ...</p>
+                                                        <p className="montfont text-left pl-4"><Moment format="LL">{fields.date}</Moment></p>
+                                                    </Link>
                                                 </div>
                                         );
                                     }
