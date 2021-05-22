@@ -166,6 +166,7 @@ export default class AboutComp extends Component {
                                                             );
                                                         })}
                                                     </div>
+                                                    
                                                     <a href={proj.link} target="_blank" rel="noopener noreferrer">
                                                         <span className={"float-right mt-3 mx-3 " + (this.props.darkMode ? "arrowdark" : "arrowlight")}>
                                                             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -180,6 +181,13 @@ export default class AboutComp extends Component {
                                                             </svg>
                                                         </span>
                                                     </a>
+                                                   { (proj.openSource) ?
+                                                    <a href={proj.ghLink} target="_blank" rel="noopener noreferrer">
+                                                        <span className={"float-right mt-3 mx-3 " + (this.props.darkMode ? "arrowdark" : "arrowlight")}>
+                                                            <img src="assets/images/social/github.svg" alt="github-link" height="30em"/>
+                                                        </span>
+                                                    </a> : null
+                                                    }
                                                 </div>
                                             </div>
                                             <br/><br/>
