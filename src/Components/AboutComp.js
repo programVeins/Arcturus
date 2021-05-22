@@ -204,7 +204,7 @@ export default class AboutComp extends Component {
                                     {
                                         [...Array(this.state.totalPages)].map((e,i) => {
                                             return(
-                                                <div className="col-1 mt-3 mx-auto mx-md-1 pagination" key={i}>
+                                                <div className="col-4 mt-3 my-pagination justify-content-center" key={i}>
                                                     <div onClick={() => {
                                                     this.setState({currentPage: i+1})
                                                     document.getElementById('proj').scrollIntoView();    

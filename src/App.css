@@ -642,8 +642,10 @@ a {
   -9px -9px 55px #d9d9d9;
 }
 
-.pagination {
+.my-pagination {
   cursor: pointer;
+  display: flex;
+  list-style: none;
 }
 
 .carousel-wrapper {
