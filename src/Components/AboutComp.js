@@ -55,7 +55,7 @@ export default class AboutComp extends Component {
                                         width="100%" height="auto" className={this.props.darkMode ? "aboutimgdark" : "aboutimglight"}/>
                                    </div>
                                    <div className="col p-4">
-                                        <div className="montfont text-8 text-justify">{me.aboutdes}</div>
+                                        <div className="montfont text-8 text-left">{me.aboutdes}</div>
                                    </div>
                                    <div className="col-md-3 d-none d-md-block d-lg-none">
                                         <img src={me.aboutimg} alt={me.name}
@@ -83,8 +83,8 @@ export default class AboutComp extends Component {
                                     {skillnames.map((skillname,index) => {
                                         return (
                                             <div className="col-3 col-md-2 my-4">
-                                                <span className="px-3 py-1 jostfont text-9">{skillname}</span> <br/>
-                                                <span className="px-3 py-1 jostfont text-9">{emojis[index]}</span>
+                                                <span className="px-md-3 py-1 jostfont text-9">{skillname}</span> <br/>
+                                                <span className="px-md-3 py-1 jostfont text-9">{emojis[index]}</span>
                                             </div>
                                         );
                                     })}
@@ -105,26 +105,12 @@ export default class AboutComp extends Component {
                                     {me.contact.map((each,index) => {
                                         return (
                                             <>
-                                                <div className="col-1 mt-3 mx-auto d-none d-lg-block">
+                                                <div className="col-3 mt-3 mx-auto social-ico">
                                                     <a href={each.link} target="_blank" rel="noopener noreferrer">
                                                         <div className={"p-3 " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                                                            <img src={each.ico} alt={each.link} height="auto" width="100%"/>
+                                                            <img src={each.ico} alt={each.link}/>
                                                         </div>
                                                     </a>
-                                                </div>
-                                                 <div className="col-2 mt-3 mx-3 d-none d-md-block d-lg-none">
-                                                 <a href={each.link} target="_blank" rel="noopener noreferrer">
-                                                     <div className={"p-4 " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                                                         <img src={each.ico} alt={each.link} height="auto" width="100%"/>
-                                                     </div>
-                                                 </a>
-                                                </div>
-                                                <div className="col-3 mt-3 mx-0 d-block d-sm-block d-md-none">
-                                                 <a href={each.link} target="_blank" rel="noopener noreferrer">
-                                                     <div className={"p-2 " + (this.props.darkMode ? "carddark" : "cardlight")}>
-                                                         <img src={each.ico} alt={each.link} height="auto" width="100%"/>
-                                                     </div>
-                                                 </a>
                                                 </div>
                                             </>
                                         );

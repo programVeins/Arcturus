@@ -698,3 +698,40 @@ a {
   box-shadow: 18px 18px 55px #b9b9b9, 
   -18px -18px 55px #e2e2e2;
 }
+
+.social-ico {
+  padding-right: 5em !important;
+  padding-left: 5em !important;
+}
+.social-ico img {
+  width: 2em;
+}
+
+@media (max-width: 992px) { 
+  .social-ico {
+    padding-right: 2em !important;
+    padding-left: 2em !important;
+  }
+  .social-ico img {
+    width: 1.5em;
+  }
+}
+@media (max-width: 600px) { 
+  .social-ico {
+    padding-right: 1.5em !important;
+    padding-left: 1.5em !important;
+  }
+  .social-ico img {
+    width: 1.3em;
+  }
+}
+
+@media (max-width: 500px) { 
+  .social-ico {
+    padding-right: 0.3em !important;
+    padding-left: 0.3em !important;
+  }
+  .social-ico img {
+    width: 1.3em;
+  }
+}
