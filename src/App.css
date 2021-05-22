@@ -651,35 +651,67 @@ a {
 .carousel-wrapper {
   width: 80%;
   height: 30em;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 @media (max-width: 992px) {
   .carousel-wrapper {
     width: 80%;
     height: 20em;
-    margin: 0 auto;
+    margin: 2em auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .carousel-wrapper {
-    width: 80%;
-    height: 8em;
-    margin: 0 auto;
+    display: none;
   }
 }
 
+.illus-error-dark {
+  background-image: var(--dark-grad);
+  color: #000;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+.illus-error-light {
+  background-image: var(--light-grad);
+  color: #fff;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .illus-error-dark {
+    display: none;
+  }
+  
+  .illus-error-light {
+   display: none;
+  }
+}
 
 .css-doq0dk div {
   opacity: 1.0 !important;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 20px;
 }
 
 
 .illusDark .css-1fzpoyk:nth-child(2) {
   border-radius: 20px;
   box-shadow: none !important;
-  
+}
+
+.illusDark .css-1fzpoyk:nth-child(3) {
+  border-radius: 20px;
+  box-shadow: none !important;
 }
 
 .illusDark .css-1fzpoyk:nth-child(4)  {
@@ -691,6 +723,12 @@ a {
   border-radius: 20px;
   box-shadow: 18px 18px 55px #b9b9b9, 
   -18px -18px 55px #e2e2e2;
+}
+
+.css-1fzpoyk:nth-child(3) {
+  border-radius: 20px;
+  box-shadow: 0px 18px 20px -10px #b0b0b0,
+              0px -18px 20px -10px #eeeeee;
 }
 
 .css-1fzpoyk:nth-child(4) {

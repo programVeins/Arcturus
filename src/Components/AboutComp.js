@@ -217,6 +217,7 @@ export default class AboutComp extends Component {
 
                             <Fade in>
                                 <IllCarousel darkMode={this.props.darkMode}/>
+                                <p className={(this.props.darkMode) ? "illus-error-dark montfont text-8" : "illus-error-light montfont text-8"}>View on a bigger device</p>
                             </Fade>   
                         </Stagger>
                     </div>
