@@ -32,7 +32,7 @@ const craftPosts = [
         date: 'May 14, 2021'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Cascasding Style Sheets',
         thumbnail: 'assets/images/craftthumbs/css.jpg',
         link: 'https://www.craft.do/s/Q0ass91hsw76JH',
@@ -42,4 +42,4 @@ const craftPosts = [
 
 ]
 
-export default craftPosts;
+export default craftPosts.reverse();

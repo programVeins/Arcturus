@@ -24,7 +24,6 @@ export default class BlogComp extends Component {
     componentDidMount() {
         this.setState({isLoading: true});
         this.fetchPosts().then(this.setPosts);
-        craftPosts.reverse()
     }
 
     fetchPosts = () => this.client.getEntries()
@@ -69,8 +68,7 @@ export default class BlogComp extends Component {
                                                     <a href={item.link} className="nonedec">
                                                         <img className="blogimg mb-5 " alt={item.title} src={item.thumbnail} height="auto" width="100%"/>
                                                         <h5 className="jostfont">{item.title}</h5>
-                                                        <p className="montfont text-justify p-4">{item.desc.substr(0,200)}</p>
-                                                        <p className="montfont text-left pl-4">{item.date}</p>
+                                                        <p className="montfont text-justify p-4">{item.desc.substr(0,200)}</p>                <p className="montfont text-left pl-4">{item.date}</p>
                                                     </a>
                                                 </div>
                                         );
