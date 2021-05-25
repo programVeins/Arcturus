@@ -56,7 +56,7 @@ const projects = [
         openSource: true,
         ghLink: "https://github.com/programVeins/procollab",
         img: "./assets/images/thumbs/college.png",
-        featured: true,
+        featured: false,
         techStack: "Full Stack,ReactJS,Python-Flask,SQLAlchemy,PostgreSQL"
     },
     {
