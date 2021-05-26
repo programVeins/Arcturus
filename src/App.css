@@ -807,3 +807,9 @@ a {
     width: 1.3em;
   }
 }
+
+@media (min-width: 1200px) { 
+  .large-padding {
+    padding: 0;
+  }
+}
