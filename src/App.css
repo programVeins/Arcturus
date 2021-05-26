@@ -375,6 +375,8 @@ a {
   box-shadow: 18px 18px 55px #d9d9d9, 
               -18px -18px 55px #ffffff;
   border-radius: 50%;
+
+  filter: sepia(10%) contrast(100%) saturate(120%) brightness(100%) hue-rotate(-15deg);
 }
 
 /* Dark */
@@ -383,6 +385,7 @@ a {
   height: auto;
   width: auto\10; /* ie8 */
   border-radius: 50%;
+  filter: sepia(10%) contrast(100%) saturate(120%) brightness(100%) hue-rotate(-15deg);
 }
 
 /* On Large Screens */
