@@ -28,8 +28,8 @@ const me = {
     few full stack projects. I have a keen eye of layouts and colors and do my best to
     contribute to robust and good looking interfaces. And oh, I love Apple 🍎`,
     skillset: {
-        skillnames: "ReactJS,Swift,SwiftUI,HTML,JavaScript,CSS,Python,Django,Flask,Figma,AdobeXD,C++",
-        emojis: "⚛️,🦅,🦅,📝,⚡️,🌈,🐍,⛓,🧪,🖋,✏️,👾",
+        skillnames: "ReactJS,Swift,SwiftUI,HTML,JavaScript,CSS,Python,Django,Flask,Figma,Sketch,C++",
+        emojis: "⚛️,🦅,🦅,📝,⚡️,🌈,🐍,⛓,🧪,🖋,💎,👾",
     },
     
     contact: [

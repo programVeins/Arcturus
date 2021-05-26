@@ -701,8 +701,6 @@ a {
 
 .css-doq0dk div {
   opacity: 1.0 !important;
-  background-color: #ffffff;
-  padding: 1em;
   border-radius: 20px;
 }
 
@@ -730,8 +728,8 @@ a {
 
 .css-1fzpoyk:nth-child(3) {
   border-radius: 20px;
-  box-shadow: 0px 18px 20px -10px #b0b0b0,
-              0px -18px 20px -10px #eeeeee;
+  box-shadow: 0px 18px 20px -18px #b0b0b0,
+              0px -18px 20px -18px #eeeeee;
 }
 
 .css-1fzpoyk:nth-child(4) {
