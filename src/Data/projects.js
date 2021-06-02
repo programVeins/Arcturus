@@ -2,7 +2,7 @@ const projects = [
     {
         id: 0,
         name: "Property Portal",
-        description: "Developed a Hackathon winning product with a friend that uses typesense to search for real estate blazingly fast!",
+        description: "Property portal is a Hackathon winning product with a friend that uses typesense to search for real estate blazingly fast!",
         extdes: "Property Portal is a project developed by me and a buddy of mine for a hackathon (it secured the first place). It uses typesense to search through available property for sale and rent. It makes use of AWS's DynamoDB, EC2, S3, React, Bootstrap and mainly the typesense engine to provide search as you type experience. There is also a very important geosearch feature that lets you search as you scroll a map.",
         link: "https://property-portal.harisaran.live/",
         openSource: true,
@@ -14,8 +14,8 @@ const projects = [
     {
         id: 1,
         name: "Ruby's Dilemma",
-        description: "A submission for WWDC21 Swift Student Challenge. Made with Swift playgrounds with SwiftUI",
-        extdes: "Meet Ruby the Rabbit 🐰 and delve into her life as you experience this Swift Playground, written in the form of a playgroundbook. Stay with Ruby and help her in various activities until you find out that there's a stunning revelation waiting for you! Designed and Developed with ❤️ for WWDC 2021 by Sabesh Bharathi",
+        description: "Apple 🍎 WWDC 2021 Swift Student Challenge winning submission. Made using Swift playgrounds with SwiftUI",
+        extdes: "Meet Ruby the Rabbit 🐰 and delve into her life as you experience this Swift Playground, written in the form of a playgroundbook. Stay with Ruby and help her in various activities until you find out that there's a stunning revelation waiting for you! Designed and Developed with ❤️ for WWDC 2021 by Sabesh Bharathi - Accepted Submission by Apple",
         link: "https://www.youtube.com/watch?v=6KlwMRYOupk",
         openSource: true,
         ghLink: "https://github.com/programVeins/rubysdilemma",
@@ -26,13 +26,13 @@ const projects = [
     {
         id: 2,
         name: "Pandemic",
-        description: "A submission for WWDC20 Swift Student Challenge. Made with Xcode playgrounds using Swift",
+        description: "A submission for Apple 🍎 WWDC 2021 Swift Student Challenge. Made with Xcode playgrounds using Swift",
         extdes: "A WWDC20 Submission devloped with ❤️ by Sabesh Bharathi. The playground focuses on the COVID-19 Global pandemic that we face right now. While it might sound redundant at this point, people still are not following basic guidelines to counter the disease. This small playground is intended to educate these people on the basic Do's and Don'ts during these troubled times and warns them of the repercussions of careless actions.",
         link: "https://www.youtube.com/watch?v=_wSukFJu3I4",
         openSource: true,
         ghLink: "https://github.com/programVeins/Pandemic",
         img: "./assets/images/thumbs/pandemic.png",
-        featured: false,
+        featured: true,
         techStack: "XCode Playground,Swift 5,UIKit,AVFoundation"
     },
     {
@@ -44,7 +44,7 @@ const projects = [
         openSource: false,
         ghLink: "",
         img: "./assets/images/thumbs/oneshot.png",
-        featured: true,
+        featured: false,
         techStack: "Full Stack,ReactJS,Python-Flask,SQLAlchemy,PostgreSQL"
     },
     {
