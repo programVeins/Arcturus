@@ -31,6 +31,15 @@ export default class PostComp extends Component {
                             url: ""
                         }
                     }
+                },
+                pic: {
+                    sys: {},
+                    fields: {
+                        title: "",
+                        file: {
+                            url: ""
+                        }
+                    }
                 }
 
             }
@@ -68,6 +77,7 @@ export default class PostComp extends Component {
     render() {
         var current = this.state.thisPost.fields;
         var picc = this.state.thisPost.fields.banner.fields;
+        var thumbPicc = this.state.thisPost.fields.pic.fields;
         if (this.state.isLoading) {
             return  (<div className={"spinner-border " + (this.props.darkMode ? "spin-dark" : "spin-light")} role="status">
                         <span className="sr-only">Loading...</span>
@@ -80,6 +90,20 @@ export default class PostComp extends Component {
                             <title>{current.title}</title>
                             <meta name="description" content={"Blog - " + current.title}/>
                             <meta name="keywords" content="Sabesh Bharathi, Blog, Post, Development, Design"/>
+                            <meta property="og:image" content={thumbPicc.file.url}/>
+                            <meta property="og:image:secure_url" content={thumbPicc.file.url} />
+                            <meta property="og:image:type" content="image/png" />
+                            <meta property="og:image:alt" content={thumbPicc.title} />
+                            <meta property="og:title" content={"Blog - " + current.title}/>
+                            <meta property="og:description" content={"Check out my write up on - " + current.title}/>
+                            <meta property="og:type" content="website"/>
+                            <meta name="twitter:card" content="summary_large_image"/>
+                            <meta name="twitter:site" content="@sabeshbharathi"/>
+                            <meta name="twitter:creator" content="@sabeshbharathi"/>
+                            <meta name="twitter:title" content={"Blog - " + current.title}/>
+                            <meta name="twitter:description" content={"Check out my write up on - " + current.title}/>
+                            <meta name="twitter:image" content={thumbPicc.file.url}/>
+                            <meta name="twitter:image:alt" content={thumbPicc.title}/>
                         </Helmet>
                     <Stagger in delay={100} duration={300}>
                         <Fade in>
