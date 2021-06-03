@@ -811,3 +811,7 @@ a {
     padding: 0;
   }
 }
+
+.blogtext img {
+  width: 100%;
+}
