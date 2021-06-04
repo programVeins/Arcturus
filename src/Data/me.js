@@ -6,7 +6,6 @@ function getAge(d1, d2){
 }
 
 export function appleLogo() {
-    console.log(navigator.appVersion)
     if (navigator.appVersion.indexOf("Mac") !== -1) {
         return ''
     }
