@@ -1,3 +1,5 @@
+import { appleLogo } from "./me";
+
 const projects = [
     {
         id: 0,
@@ -14,7 +16,7 @@ const projects = [
     {
         id: 1,
         name: "Ruby's Dilemma",
-        description: "Apple 🍎 WWDC 2021 Swift Student Challenge winning submission. Made using Swift playgrounds with SwiftUI",
+        description: `Apple ${appleLogo()} WWDC 2021 Swift Student Challenge winning submission. Made using Swift playgrounds with SwiftUI`,
         extdes: "Meet Ruby the Rabbit 🐰 and delve into her life as you experience this Swift Playground, written in the form of a playgroundbook. Stay with Ruby and help her in various activities until you find out that there's a stunning revelation waiting for you! Designed and Developed with ❤️ for WWDC 2021 by Sabesh Bharathi - Accepted Submission by Apple",
         link: "https://www.youtube.com/watch?v=6KlwMRYOupk",
         openSource: true,
@@ -26,7 +28,7 @@ const projects = [
     {
         id: 2,
         name: "Pandemic",
-        description: "A submission for Apple 🍎 WWDC 2021 Swift Student Challenge. Made with Xcode playgrounds using Swift",
+        description: `A submission for Apple ${appleLogo()} WWDC 2021 Swift Student Challenge. Made with Xcode playgrounds using Swift`,
         extdes: "A WWDC20 Submission devloped with ❤️ by Sabesh Bharathi. The playground focuses on the COVID-19 Global pandemic that we face right now. While it might sound redundant at this point, people still are not following basic guidelines to counter the disease. This small playground is intended to educate these people on the basic Do's and Don'ts during these troubled times and warns them of the repercussions of careless actions.",
         link: "https://www.youtube.com/watch?v=_wSukFJu3I4",
         openSource: true,

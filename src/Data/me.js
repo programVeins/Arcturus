@@ -5,17 +5,25 @@ function getAge(d1, d2){
     return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
 }
 
+export function appleLogo() {
+    console.log(navigator.appVersion)
+    if (navigator.appVersion.indexOf("Mac") !== -1) {
+        return ''
+    }
+    return '🍎'
+}
+
 const me = {
     id: 0,
     mainimg: "/assets/images/pics/sabesh.jpeg",
     aboutimg: "/assets/images/pics/sabs.JPG",
     memoji: "/assets/images/pics/memoji.png",
     name: "Sabesh Bharathi",
-    tagline: "Web/iOS Developer. UI/UX Designer.",
+    tagline: `Apple ${appleLogo()} WWDC21 Scholar. Web/iOS Developer, Designer.`,
     age: 19,
     maindes: `Hey there! 👋🏽 I am Sabesh. I'm ${getAge(new Date(2001, 5, 5))} and come from Chennai, India.
     I'm an adept web/iOS developer architecting meaningful and elegent
-    applications natively and on the web. I'm also a Apple 🍎 WWDC 2021
+    applications natively and on the web. I'm also a Apple ${appleLogo()} WWDC 2021
     Swift Student Challenge winner. I feel like it's every consumer's necessity
     to experience quality products, with a robust feature-set whilst
     enjoying a hassle-free and accessible User Experience ☄️ I strive to make that possible
