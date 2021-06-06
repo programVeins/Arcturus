@@ -101,7 +101,7 @@ export default class BlogComp extends Component {
                                                         <h5 className="jostfont">{item.title}</h5>
                                                         
                                                         <p className="montfont text-justify p-4">{item.desc.substr(0,200)}</p>
-                                                        <p className="montfont text-left pl-4">
+                                                        <p className="montfont text-left pl-4 pb-3">
                                                             <Moment format="LL">{item.date}</Moment>
                                                             <span className="ext-icon">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
@@ -121,7 +121,7 @@ export default class BlogComp extends Component {
                                                         <img className="blogimg mb-5 " alt={item.title} src={item.pic.fields.file.url} height="auto" width="100%"/>
                                                         <h5 className="jostfont">{item.title}</h5>
                                                         <p className="montfont text-justify p-4">{item.content.substr(0,180)} ...</p>
-                                                        <p className="montfont text-left pl-4"><Moment format="LL">{item.date}</Moment></p>
+                                                        <p className="montfont text-left pl-4 pb-3"><Moment format="LL">{item.date}</Moment></p>
                                                     </Link>
                                                 </div>
                                             );

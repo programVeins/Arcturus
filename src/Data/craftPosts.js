@@ -4,7 +4,7 @@ const craftPosts = [
         title: 'Flask - Getting started',
         thumbnail: 'assets/images/craftthumbs/flask.jpg',
         link: 'https://www.craft.do/s/iktrEbCAF4Nx1f',
-        desc: 'Get started with flask with this series of tutorials that I created while learning flask myself! These contain, overly simplied notes and steps to create your first flask project.',
+        desc: 'Get started with flask with this series of tutorials that I created while learning flask myself! These contain, overly simplied notes and steps to create your very first flask project.',
         date: '2020-03-17T15:00+05:30'
     },
     {
