@@ -16,7 +16,15 @@ const me = {
     id: 0,
     mainimg: "/assets/images/pics/sabesh.jpeg",
     aboutimg: "/assets/images/pics/sabs.JPG",
-    memoji: "/assets/images/pics/memoji.png",
+    memoji: [
+        "/assets/images/pics/memoji1.png",
+        "/assets/images/pics/memoji2.png",
+        "/assets/images/pics/memoji3.png",
+        "/assets/images/pics/memoji4.png",
+        "/assets/images/pics/memoji5.png",
+        "/assets/images/pics/memoji6.png",
+        "/assets/images/pics/memoji7.png"
+    ],
     name: "Sabesh Bharathi",
     tagline: `Apple ${appleLogo()} WWDC21 Scholar. Web/iOS Developer, Designer.`,
     age: 19,

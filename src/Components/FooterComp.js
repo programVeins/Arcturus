@@ -2,6 +2,20 @@ import React, { Component } from 'react'
 import me from '../Data/me'
 
 export default class FooterComp extends Component {
+
+    state = {
+        memojiID : 0
+    }
+
+    changeMemoji = () => {
+        if(this.state.memojiID === 6) {
+            this.setState({memojiID : 0})
+        }
+        else {
+            this.setState({memojiID : this.state.memojiID + 1})
+        }
+    }
+
     render() {
         return (
             <div className="container">
@@ -10,13 +24,13 @@ export default class FooterComp extends Component {
                 <p className="montfont text-right text-8">- Albus Dumbledore</p>
                 <br/><br/>
                 <div className="row justify-content-center">
-                   <div className="col-3 col-md-2 center-block">
-                        <img src={me.memoji} alt="Memoji" height="auto" width="100%"/>
+                    <div onClick={() => this.changeMemoji()} className="col-3 col-md-2 center-block">
+                        <img src={me.memoji[this.state.memojiID]} alt="Memoji" height="auto" width="100%"/>
                     </div>
                 </div>
         <p className="jostfont text-8">Sabesh Bharathi © {(new Date()).getFullYear()}</p>
                 <span className="jostfont text-9">
-                    Developed with  
+                    Designed with  
                 </span>
                 <span className="heart">
                     <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -28,6 +42,9 @@ export default class FooterComp extends Component {
                         </defs>
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                     </svg>
+                </span>
+                <span className="jostfont text-9">
+                    using React
                 </span>
                 
                 <br/><br/>
