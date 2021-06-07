@@ -672,31 +672,10 @@ a {
   }
 }
 
-.illus-error-dark {
-  background-image: var(--dark-grad);
-  color: #000;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-radius: 3px;
-  opacity: 0.5;
-}
 
-.illus-error-light {
-  background-image: var(--light-grad);
-  color: #fff;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-radius: 3px;
-  opacity: 0.5;
-}
-
-@media (min-width: 768px) {
-  .illus-error-dark {
+@media (max-width: 768px) {
+  .ils {
     display: none;
-  }
-  
-  .illus-error-light {
-   display: none;
   }
 }
 

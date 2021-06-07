@@ -206,7 +206,7 @@ export default class AboutComp extends Component {
                             </Fade>
 
 
-                            <Fade in>
+                            <Fade className="ils" in>
                                 <div className="row mt-5" id="proj">
                                    <div className="col">
                                       <h3 className="jostfont text-left">Illustrations</h3>
@@ -215,9 +215,8 @@ export default class AboutComp extends Component {
                                 <br/>
                             </Fade>
 
-                            <Fade in>
+                            <Fade className="ils" in>
                                 <IllCarousel darkMode={this.props.darkMode}/>
-                                <p className={(this.props.darkMode) ? "illus-error-dark montfont text-8" : "illus-error-light montfont text-8"}>View on a bigger device</p>
                             </Fade>   
                         </Stagger>
                     </div>
