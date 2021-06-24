@@ -3,7 +3,7 @@ const craftPosts = [
         id: 0,
         title: 'Flask - Getting started',
         thumbnail: 'assets/images/craftthumbs/flask.jpg',
-        link: 'https://www.craft.do/s/iktrEbCAF4Nx1f',
+        link: 'https://www.craft.do/s/wdTTdgwrGbcXD9',
         desc: 'Get started with flask with this series of tutorials that I created while learning flask myself! These contain, overly simplied notes and steps to create your very first flask project.',
         date: '2020-03-17T15:00+05:30'
     },
@@ -35,7 +35,7 @@ const craftPosts = [
         id: 4,
         title: 'Cascasding Style Sheets',
         thumbnail: 'assets/images/craftthumbs/css.jpg',
-        link: 'https://www.craft.do/s/Q0ass91hsw76JH',
+        link: 'https://www.craft.do/s/wlKsV0zMPSFwvP',
         desc: 'I have finally begun to learn CSS *properly* ! Here\'s the resources I\'ve been using to learn CSS, it basically comprises of a tutorial from web.dev combined with the CSS Podcast.',
         date: '2021-05-19T15:00+05:30'
     },
