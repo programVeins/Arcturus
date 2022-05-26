@@ -3,17 +3,17 @@ import { appleLogo } from "./me";
 const projects = [
   {
     id: 0,
-    name: "Develove",
+    name: "Typesense Swift",
     description:
-      "Develove is a super-cool social media that brings in the best of Stack overflow, LinkedIn, Medium, Twitter etc.",
+      "Typesense Swift is Typesense's swift client. Now you can search through data, blazingly fast via iOS!",
     extdes:
-      "Develove is a hackathon winning project built by 3 friends. It uses Flutter, NextJS, Tailwind, Typesense and Supabase services to manage storage, db, auth and realtime text sharing. Form guilds, post blog posts and connect with people tailored to your interest in this new gen development centric social media! It is open-sourced and free for all individuals!",
-    link: "https://develove.luxecraft.org/",
+      "A great new way to implement your searches on iOS using Typesense ⚡️🔍✨ Typesense Swift is a high level wrapper that helps you easily implement searching using Typesense. You can simply plug typesense-swift in your iOS application to get started and search through millions of records, in the blink of an eye!",
+    link: "https://github.com/typesense/typesense-swift/releases/latest",
     openSource: true,
-    ghLink: "https://github.com/luxecraft/develove",
-    img: "./assets/images/thumbs/devlo.png",
+    ghLink: "https://github.com/typesense/typesense-swift",
+    img: "./assets/images/thumbs/search.png",
     featured: true,
-    techStack: "Flutter,NextJS,TailwindCSS,Supabase,Typesense Engine",
+    techStack: "Swift, Swift's Modern Concurrency, Typesense APIs",
   },
   {
     id: 1,
@@ -44,6 +44,20 @@ const projects = [
   },
   {
     id: 3,
+    name: "Develove",
+    description:
+      "Develove is a super-cool social media that brings in the best of Stack overflow, LinkedIn, Medium, Twitter etc.",
+    extdes:
+      "Develove is a hackathon winning project built by 3 friends. It uses Flutter, NextJS, Tailwind, Typesense and Supabase services to manage storage, db, auth and realtime text sharing. Form guilds, post blog posts and connect with people tailored to your interest in this new gen development centric social media! It is open-sourced and free for all individuals!",
+    link: "https://develove.luxecraft.org/",
+    openSource: true,
+    ghLink: "https://github.com/luxecraft/develove",
+    img: "./assets/images/thumbs/devlo.png",
+    featured: false,
+    techStack: "Flutter,NextJS,TailwindCSS,Supabase,Typesense Engine",
+  },
+  {
+    id: 4,
     name: "Pandemic",
     description: `A submission for Apple ${appleLogo()} WWDC 2021 Swift Student Challenge. Made with Xcode playgrounds using Swift`,
     extdes:
@@ -56,7 +70,7 @@ const projects = [
     techStack: "XCode Playground,Swift 5,UIKit,AVFoundation",
   },
   {
-    id: 4,
+    id: 5,
     name: "Oneshot Affiliate",
     description:
       "A website made for the startup Oneshot Affiliate. Sign up to learn and earn with affiliate marketing",
@@ -70,7 +84,7 @@ const projects = [
     techStack: "Full Stack,ReactJS,Python-Flask,SQLAlchemy,PostgreSQL",
   },
   {
-    id: 5,
+    id: 6,
     name: "Procollab",
     description:
       "An intracollegiate job posting/seeking portal created for a DBMS Project in university",
@@ -84,7 +98,7 @@ const projects = [
     techStack: "Full Stack,ReactJS,Python-Flask,SQLAlchemy,PostgreSQL",
   },
   {
-    id: 6,
+    id: 7,
     name: "SteamPunk",
     description:
       "A retrofuturistic sci-fi theme to stir up various elements of nostalgic science fantasy as you hack away with VSCode",
@@ -98,7 +112,7 @@ const projects = [
     techStack: "CSS, VSCode, Theme",
   },
   {
-    id: 7,
+    id: 8,
     name: "Junker",
     description:
       "An iOS (iMessage) tool made to filter out spam SMS's without invading privacy. Made with swift",
@@ -112,7 +126,7 @@ const projects = [
     techStack: "XCode,Swift 5,iMessage Target",
   },
   {
-    id: 8,
+    id: 9,
     name: "CovidCam",
     description:
       "A hackathon winning prototype to trace the community spread of the virus Covid-19",
@@ -126,7 +140,7 @@ const projects = [
     techStack: "XCode,Swift 5,CoreLocation,MapKit",
   },
   {
-    id: 9,
+    id: 10,
     name: "Pottermoney",
     description:
       "Currency convertor for Harry Potter currency, made with vanilla JS",
